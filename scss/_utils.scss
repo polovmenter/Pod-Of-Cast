@@ -3,3 +3,70 @@
     padding-inline: $container-padding-x;
     margin-inline: auto;
 }
+
+.display-heading {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+.h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    &--large {
+        line-height: 1.4;
+    }
+}
+
+.h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    &--bold {
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: -0.02em;
+    }
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    &--bold {
+        font-weight: 700;
+    }
+}
+
+.caption {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    &--bold {
+        font-weight: 700;
+    }
+}
+
+.small {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    &--bold {
+        font-weight: 700;
+    }
+}

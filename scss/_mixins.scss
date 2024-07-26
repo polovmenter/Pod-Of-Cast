@@ -1,3 +1,80 @@
 @mixin fluid-text($min, $max) {
-    font-size: clamp(#{$min}px, #{$max / $template-width * 100}vw, #{$max});
+    font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max});
+}
+
+@mixin display-heading {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+@mixin h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+@mixin h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+@mixin h2-large {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+
+@mixin h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@mixin h3-bold {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+
+@mixin text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@mixin text-bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+@mixin caption {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@mixin caption-bold {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+@mixin small {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@mixin small-bold {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
 }

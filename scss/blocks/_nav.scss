@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        margin-inline: 118px auto;
+    }
+
+    &__link {
+        @include text-bold;
+
+        padding: 5px;
+        color: $color-dark;
+    }
+
+    &__buttons {
+        display: flex;
+        column-gap: 20px;
+    }
+}

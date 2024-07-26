@@ -59,6 +59,68 @@ img {
   margin-inline: auto;
 }
 
+.display-heading {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.h2--large {
+  line-height: 1.4;
+}
+
+.h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.h3--bold {
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.text--bold {
+  font-weight: 700;
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.caption--bold {
+  font-weight: 700;
+}
+
+.small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.small--bold {
+  font-weight: 700;
+}
+
 body {
   font-family: var(--font-family-base);
 }
@@ -66,4 +128,58 @@ body {
 a,
 button {
   transition-duration: var(--transition-duration);
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  display: inline-block;
+  line-height: 1.2;
+  padding: 18px 34px;
+  background-color: var(--color-dark);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--color-dark);
+  color: var(--color-light);
+  text-transform: uppercase;
+}
+.button--small {
+  padding: 10px 22px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.button--transparent {
+  background-color: transparent;
+  color: var(--color-dark);
+  box-shadow: none;
+}
+
+.header {
+  padding-block: 24px;
+  background-color: var(--color-light-alt);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin-inline: 118px auto;
+}
+.nav__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+  padding: 5px;
+  color: var(--color-dark);
+}
+.nav__buttons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }/*# sourceMappingURL=style.css.map */

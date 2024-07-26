@@ -1,0 +1,24 @@
+.button {
+    @include caption-bold;
+
+    display: inline-block;
+    line-height: 1.2;
+    padding: 18px 34px;
+    background-color: $color-dark;
+    border-radius: 8px;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid $color-dark;
+    color: $color-light;
+    text-transform: uppercase;
+
+    &--small {
+        padding: 10px 22px;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    &--transparent {
+        background-color: transparent;
+        color: $color-dark;
+        box-shadow: none;
+    }
+}
