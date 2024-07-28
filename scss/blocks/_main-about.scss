@@ -1,0 +1,26 @@
+.main-about {
+    padding-block: $section-padding-y;
+    text-align: center;
+
+    &__title {
+        @include h1;
+
+        max-width: 745px;
+        margin-inline: auto;
+        color: $color-dark;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-block: 100px 120px;
+    }
+
+    &__item {
+        max-width: 472px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+    }
+}

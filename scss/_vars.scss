@@ -1,6 +1,8 @@
 :root {
     --container-width: 1160px;
     --container-padding-x: 15px;
+
+    --section-padding-y: 140px;
     
     --color-light: #FFFFFF;
     --color-light-alt: #F7EDE8;
@@ -19,6 +21,8 @@
 
 $container-width: var(--container-width);
 $container-padding-x: var(--container-padding-x);
+
+$section-padding-y: var(--section-padding-y);
 
 $color-light: var(--color-light);
 $color-light-alt: var(--color-light-alt);

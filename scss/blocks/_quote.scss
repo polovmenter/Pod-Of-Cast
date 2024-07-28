@@ -1,0 +1,84 @@
+.quote {
+    position: relative;
+    padding-block: 40px;
+    background-color: $color-light-alt;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &:before {
+        bottom: 53px;
+        left: -60px;
+        width: 120px;
+        height: 120px;
+        background-image: url(../images/decor/spring.svg);
+    }
+
+    &::after {
+        top: -55px;
+        right: -46px;
+        width: 147px;
+        height: 153px;
+        background-image: url(../images/decor/star.svg);
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__icon {
+        @include display-heading;
+
+        letter-spacing: -0.02em;
+        color: $color-accent;
+    }
+
+    &__text {
+        @include h2-large;
+
+        max-width: 670px;
+        color: $color-dark;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        color: $color-dark;
+
+        &-info {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        &-image {
+            border-radius: 50%;
+        }
+
+        &-name {
+            @include caption;
+        }
+
+        &-post {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            & span {
+                @include caption-bold;
+            }
+        }
+    }
+}
