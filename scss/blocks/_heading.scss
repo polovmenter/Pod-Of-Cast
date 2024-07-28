@@ -1,0 +1,11 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &__text {
+        @include h3;
+        
+        color: $color-gray;
+    }
+}

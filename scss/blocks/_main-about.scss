@@ -1,13 +1,11 @@
 .main-about {
+    position: relative;
     padding-block: $section-padding-y;
     text-align: center;
 
     &__title {
-        @include h1;
-
         max-width: 745px;
         margin-inline: auto;
-        color: $color-dark;
     }
 
     &__content {

@@ -5,4 +5,12 @@
     transform: translate(-50%, 50%);
     width: 46px;
     height: 150px;
+    background-image: url(../images/decor/scribble.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--dark {
+        background-image: url(../images/decor/scribble-dark.svg);
+    }
 }
