@@ -12,6 +12,9 @@
     --font-family-base: "Montserrat Alternates", sans-serif;
 
     --transition-duration: 0.3s;
+
+    --border-radius: 8px;
+    --border-radius--large: 12px;
 }
 
 $container-width: var(--container-width);
@@ -27,4 +30,7 @@ $color-blue: var(--color-blue);
 
 $font-family-base: var(--font-family-base);
 
-$transition-duration: var(--transition-duration)
+$transition-duration: var(--transition-duration);
+
+$border-radius: var(--border-radius);
+$border-radius--large: var(--border-radius--large);

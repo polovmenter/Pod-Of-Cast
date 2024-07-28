@@ -1,0 +1,29 @@
+.top {
+    position: relative;
+    background-color: $color-light-alt;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &::before {
+        width: 326px;
+        height: 593px;
+        top: -52px;
+        left: 0;
+        background-image: url(../images/decor/swirl.svg);
+    }
+
+    &::after {
+        width: 92px;
+        height: 167px;
+        top: 72px;
+        right: 0;
+        background-image: url(../images/decor/stars.png);
+    }
+}

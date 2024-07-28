@@ -1,5 +1,9 @@
 body {
+    @include text;
+
     font-family: $font-family-base;
+    color: $color-gray;
+    overflow-x: hidden;
 }
 
 a,

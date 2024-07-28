@@ -1,0 +1,41 @@
+.cover {
+    position: relative;
+    width: 472px;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: $border-radius--large;
+
+    &--small {
+        width: 372px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__platforms {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        column-gap: 10px;
+    }
+
+    &__title {
+        @include h2-large;
+
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        color: $color-blue;
+        letter-spacing: -0.08em;
+    }
+}

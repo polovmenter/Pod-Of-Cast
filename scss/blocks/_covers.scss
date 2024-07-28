@@ -1,0 +1,33 @@
+.covers {
+    position: relative;
+    margin-block: 120px;
+    overflow-x: hidden;
+    height: 372px;
+
+    &__track {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        animation: infinite-move 20s linear infinite;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 20px;
+        padding-inline: 10px;
+    }
+}
+
+@keyframes infinite-move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

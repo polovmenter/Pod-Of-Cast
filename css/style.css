@@ -51,6 +51,8 @@ img {
   --color-blue: #81ADC8;
   --font-family-base: "Montserrat Alternates", sans-serif;
   --transition-duration: 0.3s;
+  --border-radius: 8px;
+  --border-radius--large: 12px;
 }
 
 .container {
@@ -59,11 +61,28 @@ img {
   margin-inline: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .display-heading {
   font-size: 96px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.04em;
+}
+.display-heading span {
+  color: var(--color-accent);
 }
 
 .h1 {
@@ -122,7 +141,12 @@ img {
 }
 
 body {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
   font-family: var(--font-family-base);
+  color: var(--color-gray);
+  overflow-x: hidden;
 }
 
 a,
@@ -138,7 +162,7 @@ button {
   line-height: 1.2;
   padding: 18px 34px;
   background-color: var(--color-dark);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
   border: 2px solid var(--color-dark);
   color: var(--color-light);
@@ -154,9 +178,179 @@ button {
   box-shadow: none;
 }
 
+.cover {
+  position: relative;
+  width: 472px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--border-radius--large);
+}
+.cover--small {
+  width: 372px;
+}
+.cover__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.cover__platforms {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.cover__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: var(--color-blue);
+  letter-spacing: -0.08em;
+}
+
+.scribble {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 46px;
+  height: 150px;
+}
+
 .header {
   padding-block: 24px;
   background-color: var(--color-light-alt);
+}
+
+.top {
+  position: relative;
+  background-color: var(--color-light-alt);
+}
+.top::before, .top::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top::before {
+  width: 326px;
+  height: 593px;
+  top: -52px;
+  left: 0;
+  background-image: url(../images/decor/swirl.svg);
+}
+.top::after {
+  width: 92px;
+  height: 167px;
+  top: 72px;
+  right: 0;
+  background-image: url(../images/decor/stars.png);
+}
+
+.first-screen {
+  padding-block: 40px 140px;
+}
+.first-screen::after {
+  width: 156px;
+  height: 217px;
+  background-image: url(../images/decor/stars-large.png);
+  right: 58px;
+  top: 113px;
+}
+.first-screen__content {
+  max-width: 543px;
+  text-align: center;
+}
+.first-screen__title {
+  color: var(--color-dark);
+  margin-bottom: 40px;
+}
+.first-screen__text {
+  max-width: 300px;
+  margin-inline: auto;
+  margin-bottom: 60px;
+}
+.first-screen__button {
+  padding: 22px 48px;
+}
+
+.covers {
+  position: relative;
+  margin-block: 120px;
+  overflow-x: hidden;
+  height: 372px;
+}
+.covers__track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  animation: infinite-move 20s linear infinite;
+}
+.covers__track:hover {
+  animation-play-state: paused;
+}
+.covers__list {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-inline: 10px;
+}
+
+@keyframes infinite-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.platforms {
+  position: relative;
+  padding-block: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.platforms::before, .platforms::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--color-gray);
+}
+.platforms::before {
+  top: -1px;
+}
+.platforms::after {
+  bottom: -1px;
+}
+.platforms__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+}
+.platforms__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 865px;
 }
 
 .nav {

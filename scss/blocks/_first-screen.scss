@@ -1,0 +1,31 @@
+.first-screen {
+    padding-block: 40px 140px;
+
+    &::after {
+        width: 156px;
+        height: 217px;
+        background-image: url(../images/decor/stars-large.png);
+        right: 58px;
+        top: 113px;
+    }
+
+    &__content {
+        max-width: 543px;
+        text-align: center;
+    }
+
+    &__title {
+        color: $color-dark;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        max-width: 300px;
+        margin-inline: auto;
+        margin-bottom: 60px;
+    }
+
+    &__button {
+        padding: 22px 48px;
+    }
+}
