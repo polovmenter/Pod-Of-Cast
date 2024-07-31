@@ -3,6 +3,10 @@
     flex-direction: column;
     row-gap: 20px;
 
+    @include tablet {
+        row-gap: 10px
+    }
+
     &__text {
         @include h3;
         

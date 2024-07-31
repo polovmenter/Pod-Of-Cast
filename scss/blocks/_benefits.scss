@@ -8,6 +8,14 @@
         flex-direction: column;
         align-items: center;
         row-gap: 100px;
+
+        @include tablet {
+            row-gap: 80px;
+        }
+
+        @include mobile {
+            row-gap: 50px;
+        }
     }
 
     &__title {
@@ -24,6 +32,10 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 
@@ -31,6 +43,15 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 80px 20px;
+
+        @include tablet {
+            row-gap: 60px;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 40px;
+        }
     }
 
     &__item {
@@ -46,6 +67,10 @@
 
             margin-bottom: 10px;
             color: $color-dark;
+
+            @include mobile {
+                margin-bottom: 5px;
+            }
         }
 
         &-text {

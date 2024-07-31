@@ -35,14 +35,14 @@
 }
 
 @mixin h3 {
-    @include fluid-text(18, 22);
+    @include fluid-text(16, 22);
 
     font-weight: 500;
     line-height: 1.6;
 }
 
 @mixin h3-bold {
-    @include fluid-text(18, 22);
+    @include fluid-text(16, 22);
 
     font-weight: 700;
     line-height: 1.4;
@@ -50,14 +50,14 @@
 }
 
 @mixin text {
-    @include fluid-text(14, 16);
+    @include fluid-text(12, 16);
     
     font-weight: 500;
     line-height: 1.6;
 }
 
 @mixin text-bold {
-    @include fluid-text(14, 16);
+    @include fluid-text(12, 16);
     
     font-weight: 700;
     line-height: 1.6;

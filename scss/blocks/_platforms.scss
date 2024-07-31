@@ -59,4 +59,17 @@
             flex-basis: auto;
         }
     }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        height: auto;
+
+        @include tablet {
+            width: 80%;
+        }
+    }
 }
