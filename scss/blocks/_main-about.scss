@@ -6,12 +6,34 @@
     &__title {
         max-width: 745px;
         margin-inline: auto;
+
+        @include tablet {
+            max-width: 600px;
+        }
+
+        @include mobile {
+            max-width: 500px;
+        }
     }
 
     &__content {
         display: flex;
         justify-content: space-between;
+        column-gap: 40px;
         padding-block: 100px 120px;
+        
+        @include tablet {
+            padding-block: 60px 80px;
+        }
+
+        @include mobile {
+            padding-block: 40px 60px;
+        }
+
+        @include mobile-s {
+            flex-direction: column;
+            row-gap: 30px;
+        }
     }
 
     &__item {
@@ -20,5 +42,17 @@
         flex-direction: column;
         row-gap: 40px;
         align-items: center;
+
+        @include tablet {
+            row-gap: 20px;
+        }
+    }
+
+    &__image {
+        height: auto;
+
+        @include tablet {
+            max-width: 200px;
+        }
     }
 }

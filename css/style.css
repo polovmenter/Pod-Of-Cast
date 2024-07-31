@@ -55,6 +55,16 @@ img {
   --border-radius: 8px;
   --border-radius--large: 12px;
 }
+@media (max-width: 1025px) {
+  :root {
+    --section-padding-y: 100px;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --section-padding-y: 50px ;
+  }
+}
 
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
@@ -87,14 +97,14 @@ img {
 }
 
 .h1 {
-  font-size: 60px;
+  font-size: clamp(25px, 4.1666666667vw, 60px);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.04em;
 }
 
 .h2 {
-  font-size: clamp(25px, 2.5vw, 36px);
+  font-size: clamp(20px, 2.5vw, 36px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -124,7 +134,7 @@ img {
 }
 
 .caption {
-  font-size: 14px;
+  font-size: clamp(12px, 0.9722222222vw, 14px);
   font-weight: 500;
   line-height: 1.6;
 }
@@ -156,7 +166,7 @@ button {
 }
 
 .button {
-  font-size: 14px;
+  font-size: clamp(12px, 0.9722222222vw, 14px);
   font-weight: 700;
   line-height: 1.6;
   display: inline-block;
@@ -242,7 +252,7 @@ button {
        column-gap: 10px;
 }
 .cover__title {
-  font-size: clamp(25px, 2.5vw, 36px);
+  font-size: clamp(20px, 2.5vw, 36px);
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.02em;
@@ -283,7 +293,7 @@ button {
 }
 
 .title {
-  font-size: 60px;
+  font-size: clamp(25px, 4.1666666667vw, 60px);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -312,12 +322,23 @@ button {
   align-items: center;
   row-gap: 40px;
 }
+@media (max-width: 768px) {
+  .quote {
+    padding: 30px;
+    row-gap: 20px;
+  }
+}
 .quote::before, .quote::after {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 1250px) {
+  .quote::before, .quote::after {
+    display: none;
+  }
 }
 .quote:before {
   bottom: 53px;
@@ -345,12 +366,23 @@ button {
   color: var(--color-accent);
 }
 .quote__text {
-  font-size: clamp(25px, 2.5vw, 36px);
+  font-size: clamp(20px, 2.5vw, 36px);
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.02em;
   max-width: 670px;
   color: var(--color-dark);
+}
+@media (max-width: 1025px) {
+  .quote__text {
+    max-width: 500px;
+  }
+}
+@media (max-width: 520px) {
+  .quote__author {
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }
 
 .author {
@@ -370,7 +402,7 @@ button {
   border-radius: 50%;
 }
 .author__name {
-  font-size: 14px;
+  font-size: clamp(12px, 0.9722222222vw, 14px);
   font-weight: 500;
   line-height: 1.6;
 }
@@ -381,7 +413,7 @@ button {
        column-gap: 10px;
 }
 .author__post span {
-  font-size: 14px;
+  font-size: clamp(12px, 0.9722222222vw, 14px);
   font-weight: 700;
   line-height: 1.6;
 }
@@ -426,7 +458,7 @@ button {
   background-position: center;
   background-size: cover;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .top::before, .top::after {
     display: none;
   }
@@ -448,6 +480,11 @@ button {
 
 .first-screen {
   padding-block: 40px 140px;
+}
+@media (max-width: 1025px) {
+  .first-screen {
+    padding-block: 30px 100px;
+  }
 }
 @media (max-width: 768px) {
   .first-screen {
@@ -604,10 +641,38 @@ button {
   max-width: 745px;
   margin-inline: auto;
 }
+@media (max-width: 1025px) {
+  .main-about__title {
+    max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .main-about__title {
+    max-width: 500px;
+  }
+}
 .main-about__content {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   padding-block: 100px 120px;
+}
+@media (max-width: 1025px) {
+  .main-about__content {
+    padding-block: 60px 80px;
+  }
+}
+@media (max-width: 768px) {
+  .main-about__content {
+    padding-block: 40px 60px;
+  }
+}
+@media (max-width: 520px) {
+  .main-about__content {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }
 .main-about__item {
   max-width: 472px;
@@ -615,6 +680,19 @@ button {
   flex-direction: column;
   row-gap: 40px;
   align-items: center;
+}
+@media (max-width: 1025px) {
+  .main-about__item {
+    row-gap: 20px;
+  }
+}
+.main-about__image {
+  height: auto;
+}
+@media (max-width: 1025px) {
+  .main-about__image {
+    max-width: 200px;
+  }
 }
 
 .benefits {

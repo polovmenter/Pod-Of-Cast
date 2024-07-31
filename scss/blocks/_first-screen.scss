@@ -1,6 +1,10 @@
 .first-screen {
     padding-block: 40px 140px;
 
+    @include tablet {
+        padding-block: 30px 100px;
+    }
+
     @include mobile {
         padding-block: 20px 60px;
     }

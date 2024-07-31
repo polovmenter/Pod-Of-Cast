@@ -17,6 +17,14 @@
 
     --border-radius: 8px;
     --border-radius--large: 12px;
+
+    @media (max-width: 1025px) {
+        --section-padding-y: 100px;
+    }
+
+    @media (max-width: 768px) {
+        --section-padding-y: 50px
+    }
 }
 
 $container-width: var(--container-width);

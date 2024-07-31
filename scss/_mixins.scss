@@ -11,14 +11,15 @@
 }
 
 @mixin h1 {
-    font-size: 60px;
+    @include fluid-text(25, 60);
+
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
 
 @mixin h2 {
-    @include fluid-text(25, 36);
+    @include fluid-text(20, 36);
 
     font-weight: 700;
     line-height: 1;
@@ -26,7 +27,7 @@
 }
 
 @mixin h2-large {
-    @include fluid-text(25, 36);
+    @include fluid-text(20, 36);
 
     font-weight: 700;
     line-height: 1.4;
@@ -63,13 +64,15 @@
 }
 
 @mixin caption {
-    font-size: 14px;
+    @include fluid-text(12, 14);
+
     font-weight: 500;
     line-height: 1.6;
 }
 
 @mixin caption-bold {
-    font-size: 14px;
+    @include fluid-text(12, 14);
+
     font-weight: 700;
     line-height: 1.6;
 }
