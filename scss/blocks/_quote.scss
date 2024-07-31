@@ -50,35 +50,4 @@
         max-width: 670px;
         color: $color-dark;
     }
-
-    &__author {
-        display: flex;
-        align-items: center;
-        column-gap: 10px;
-        color: $color-dark;
-
-        &-info {
-            display: flex;
-            align-items: center;
-            column-gap: 10px;
-        }
-
-        &-image {
-            border-radius: 50%;
-        }
-
-        &-name {
-            @include caption;
-        }
-
-        &-post {
-            display: flex;
-            align-items: center;
-            column-gap: 10px;
-
-            & span {
-                @include caption-bold;
-            }
-        }
-    }
 }

@@ -4,6 +4,16 @@
     overflow-x: hidden;
     height: 372px;
 
+    @include tablet {
+        margin-block: 80px;
+        height: 250px;
+    }
+
+    @include mobile {
+        height: 200px;
+        margin-block: 50px;
+    }
+
     &__track {
         position: absolute;
         top: 0;

@@ -1,4 +1,8 @@
 .header {
     padding-block: 24px;
     background-color: $color-light-alt;
+
+    @include tablet {
+        padding-block: 14px;
+    }
 }

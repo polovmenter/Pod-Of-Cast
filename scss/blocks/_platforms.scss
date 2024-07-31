@@ -5,6 +5,19 @@
     justify-content: space-between;
     align-items: center;
 
+    @include tablet {
+        padding-block: 40px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    @include mobile-s {
+        padding-block: 30px;
+    }
+
     &::before, 
     &::after {
         content: "";
@@ -35,5 +48,15 @@
         justify-content: space-around;
         align-items: center;
         flex-basis: 865px;
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: 30px;
+            flex-basis: auto;
+        }
     }
 }

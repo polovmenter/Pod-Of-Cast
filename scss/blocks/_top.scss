@@ -9,6 +9,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        
+        @include desktop {
+            display: none;
+        }
     }
 
     &::before {

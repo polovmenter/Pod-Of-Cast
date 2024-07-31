@@ -1,6 +1,10 @@
 .first-screen {
     padding-block: 40px 140px;
 
+    @include mobile {
+        padding-block: 20px 60px;
+    }
+
     &::after {
         width: 156px;
         height: 217px;
@@ -17,12 +21,20 @@
     &__title {
         color: $color-dark;
         margin-bottom: 40px;
+
+        @include tablet {
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
         max-width: 300px;
         margin-inline: auto;
         margin-bottom: 60px;
+
+        @include tablet {
+            margin-bottom: 30px;
+        }
     }
 
     &__button {

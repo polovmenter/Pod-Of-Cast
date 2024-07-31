@@ -18,7 +18,8 @@
 }
 
 .display-heading {
-    font-size: 96px;
+    @include fluid-text(55, 96);
+    
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.04em;
@@ -36,7 +37,8 @@
 }
 
 .h2 {
-    font-size: 36px;
+    @include fluid-text(25, 36);
+    
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -47,7 +49,8 @@
 }
 
 .h3 {
-    font-size: 22px;
+    @include fluid-text(18, 22);
+
     font-weight: 500;
     line-height: 1.6;
 
@@ -59,7 +62,8 @@
 }
 
 .text {
-    font-size: 16px;
+    @include fluid-text(14, 16);
+    
     font-weight: 500;
     line-height: 1.6;
 

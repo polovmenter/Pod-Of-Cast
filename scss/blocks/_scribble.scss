@@ -10,6 +10,10 @@
     background-position: center;
     background-size: cover;
 
+    @include mobile {
+        display: none;
+    }
+
     &--dark {
         background-image: url(../images/decor/scribble-dark.svg);
     }

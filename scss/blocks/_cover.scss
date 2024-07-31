@@ -9,6 +9,14 @@
 
     &--small {
         width: 372px;
+
+        @include tablet {
+            width: 250px;
+        }
+        
+        @include mobile {
+            width: 200px;
+        }
     }
 
     &__link {
@@ -37,5 +45,11 @@
         right: 20px;
         color: $color-blue;
         letter-spacing: -0.08em;
+
+        @include tablet {
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+        }
     }
 }
