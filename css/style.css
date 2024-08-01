@@ -304,6 +304,7 @@ button {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  text-align: center;
 }
 @media (max-width: 1025px) {
   .heading {
@@ -776,6 +777,11 @@ button {
   margin-inline: auto;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .benefits__item-icon {
+    margin-bottom: 20px;
+  }
+}
 .benefits__item-title {
   font-size: clamp(16px, 1.5277777778vw, 22px);
   font-weight: 700;
@@ -793,6 +799,167 @@ button {
   font-size: clamp(12px, 1.1111111111vw, 16px);
   font-weight: 500;
   line-height: 1.6;
+}
+
+.pricing {
+  position: relative;
+  padding-block: var(--section-padding-y);
+}
+.pricing__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 100px;
+}
+.pricing__title {
+  position: relative;
+}
+.pricing__title::before {
+  content: "";
+  position: absolute;
+  top: -63px;
+  left: -74px;
+  width: 120px;
+  height: 120px;
+  background-image: url(../images/decor/sparkle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pricing__items {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  position: relative;
+}
+.pricing__items::before, .pricing__items::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pricing__items::before {
+  width: 120px;
+  height: 120px;
+  left: -70px;
+  bottom: -40px;
+  background-image: url(../images/decor/swirl-blue.svg);
+  z-index: 1;
+}
+.pricing__items::after {
+  width: 147px;
+  height: 153px;
+  top: -68px;
+  right: -75px;
+  background-image: url(../images/decor/star.svg);
+  z-index: 1;
+}
+.pricing__item {
+  max-width: 373px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  z-index: 2;
+}
+.pricing__item:first-child .pricing__benefits-item:first-child {
+  font-weight: 400;
+}
+.pricing__item--popular .pricing__item-inner {
+  border-color: var(--color-accent);
+  background-color: var(--color-light-alt);
+}
+.pricing__item-inner {
+  padding: 39px;
+  border: 2px solid var(--color-dark);
+  border-radius: var(--border-radius);
+  background-color: var(--color-light);
+}
+.pricing__item-title {
+  font-size: clamp(20px, 2.5vw, 36px);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+}
+.pricing__item-badge {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--color-light);
+  padding: 3px 6px;
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+}
+.pricing__item-text {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 500;
+  line-height: 1.6;
+}
+.pricing__item-price {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 700;
+  line-height: 1.6;
+}
+.pricing__item-price span {
+  font-size: clamp(16px, 1.5277777778vw, 22px);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--color-accent);
+}
+.pricing__content {
+  min-height: 357px;
+  padding-block: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.pricing__content-top, .pricing__content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing__content-middle {
+  margin-bottom: auto;
+}
+.pricing__benefits {
+  min-height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 20px;
+}
+.pricing__benefits-title {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 700;
+  line-height: 1.6;
+}
+.pricing__benefits-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: var(--color-dark);
+}
+.pricing__benefits-item {
+  position: relative;
+  padding-left: 10px;
+}
+.pricing__benefits-item:first-child {
+  font-weight: 700;
+}
+.pricing__benefits-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background-color: currentColor;
+  border-radius: 50%;
 }
 
 .nav {

@@ -60,6 +60,10 @@
         &-icon {
             margin-inline: auto;
             margin-bottom: 30px;
+
+            @include mobile {
+                margin-bottom: 20px;
+            }
         }
 
         &-title {
