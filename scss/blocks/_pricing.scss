@@ -7,6 +7,14 @@
         flex-direction: column;
         align-items: center;
         row-gap: 100px;
+
+        @include tablet {
+            row-gap: 80px;
+        }
+
+        @include mobile {
+            row-gap: 50px;
+        }
     }
 
     &__title {
@@ -23,6 +31,10 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 
@@ -32,6 +44,16 @@
         column-gap: 20px;
         position: relative;
 
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 20px;
+        }
+        
+        @include mobile {
+            row-gap: 30px;
+        }
+
         &::before,
         &::after {
             content: "";
@@ -39,6 +61,10 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            @include desktop {
+                display: none;
+            }
         }
 
         &::before {
@@ -67,6 +93,10 @@
         row-gap: 20px;
         z-index: 2;
 
+        @include mobile {
+            row-gap: 10px;
+        }
+
         &:first-child {
             & .pricing__benefits-item:first-child {
                 font-weight: 400;
@@ -85,6 +115,10 @@
             border: 2px solid $color-dark;
             border-radius: $border-radius;
             background-color: $color-light;
+
+            @include tablet {
+                padding: 25px;
+            }
         }
 
         &-title {
@@ -125,6 +159,11 @@
         justify-content: space-between;
         row-gap: 20px;
 
+        @include tablet {
+            padding-block: 40px 20px;
+            min-height: 300px;
+        }
+
         &-top,
         &-bottom {
             display: flex;
@@ -143,6 +182,10 @@
         flex-direction: column;
         justify-content: start;
         row-gap: 20px;
+
+        @include tablet {
+            min-height: 250px;
+        }
 
         &-title {
             @include caption-bold

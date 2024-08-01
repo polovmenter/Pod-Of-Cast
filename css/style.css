@@ -811,6 +811,16 @@ button {
   align-items: center;
   row-gap: 100px;
 }
+@media (max-width: 1025px) {
+  .pricing__inner {
+    row-gap: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .pricing__inner {
+    row-gap: 50px;
+  }
+}
 .pricing__title {
   position: relative;
 }
@@ -826,6 +836,11 @@ button {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 768px) {
+  .pricing__title::before {
+    display: none;
+  }
+}
 .pricing__items {
   display: flex;
   justify-content: space-between;
@@ -833,12 +848,29 @@ button {
        column-gap: 20px;
   position: relative;
 }
+@media (max-width: 1025px) {
+  .pricing__items {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .pricing__items {
+    row-gap: 30px;
+  }
+}
 .pricing__items::before, .pricing__items::after {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 1250px) {
+  .pricing__items::before, .pricing__items::after {
+    display: none;
+  }
 }
 .pricing__items::before {
   width: 120px;
@@ -863,6 +895,11 @@ button {
   row-gap: 20px;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .pricing__item {
+    row-gap: 10px;
+  }
+}
 .pricing__item:first-child .pricing__benefits-item:first-child {
   font-weight: 400;
 }
@@ -875,6 +912,11 @@ button {
   border: 2px solid var(--color-dark);
   border-radius: var(--border-radius);
   background-color: var(--color-light);
+}
+@media (max-width: 1025px) {
+  .pricing__item-inner {
+    padding: 25px;
+  }
 }
 .pricing__item-title {
   font-size: clamp(20px, 2.5vw, 36px);
@@ -917,6 +959,12 @@ button {
   justify-content: space-between;
   row-gap: 20px;
 }
+@media (max-width: 1025px) {
+  .pricing__content {
+    padding-block: 40px 20px;
+    min-height: 300px;
+  }
+}
 .pricing__content-top, .pricing__content-bottom {
   display: flex;
   justify-content: space-between;
@@ -931,6 +979,11 @@ button {
   flex-direction: column;
   justify-content: start;
   row-gap: 20px;
+}
+@media (max-width: 1025px) {
+  .pricing__benefits {
+    min-height: 250px;
+  }
 }
 .pricing__benefits-title {
   font-size: clamp(12px, 0.9722222222vw, 14px);
