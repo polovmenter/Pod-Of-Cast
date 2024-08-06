@@ -50,6 +50,7 @@ img {
   --color-dark: #000000;
   --color-accent: #CD4631;
   --color-blue: #81ADC8;
+  --color-light-blue: #EDF3F7;
   --font-family-base: "Montserrat Alternates", sans-serif;
   --transition-duration: 0.3s;
   --border-radius: 8px;
@@ -282,6 +283,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .scribble {
@@ -303,6 +305,7 @@ button {
 .heading {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 20px;
   text-align: center;
 }
@@ -1096,6 +1099,117 @@ button {
   height: 3px;
   background-color: currentColor;
   border-radius: 50%;
+}
+
+.cta {
+  padding-block: var(--section-padding-y);
+  background-color: var(--color-light-blue);
+  position: relative;
+}
+.cta::before, .cta::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cta::before {
+  background-image: url(../images/cta/cta-image-1.png);
+  height: 524px;
+  width: 440px;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 1250px) {
+  .cta::before {
+    transform: scale(0.7);
+    bottom: -78px;
+    left: -66px;
+  }
+}
+@media (max-width: 1025px) {
+  .cta::before {
+    display: none;
+  }
+}
+.cta::after {
+  background-image: url(../images/cta/cta-image-2.png);
+  height: 736px;
+  width: 380px;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 1250px) {
+  .cta::after {
+    transform: scale(0.7);
+    bottom: -110px;
+    right: -57px;
+  }
+}
+@media (max-width: 1025px) {
+  .cta::after {
+    display: none;
+  }
+}
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 140px;
+  max-width: 530px;
+  text-align: center;
+}
+@media (max-width: 1250px) {
+  .cta__inner {
+    row-gap: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .cta__inner {
+    row-gap: 50px;
+  }
+}
+.cta__badge {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--color-accent);
+  padding: 3px 6px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
+.cta__button {
+  position: relative;
+  margin-bottom: 24px;
+}
+.cta__button::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 63px;
+  height: 61px;
+  background-image: url(../images/decor/sparkle-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cta__platforms {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.cta__platforms-title {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 500;
+  line-height: 1.6;
+}
+.cta__platforms-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .footer {

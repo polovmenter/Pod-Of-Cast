@@ -1,0 +1,111 @@
+.cta {
+    padding-block: $section-padding-y;
+    background-color: $color-light-blue;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &::before {
+        background-image: url(../images/cta/cta-image-1.png);
+        height: 524px;
+        width: 440px;
+        bottom: 0;
+        left: 0;
+
+        @include desktop {
+            transform: scale(0.7);
+            bottom: -78px;
+            left: -66px;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &::after {
+        background-image: url(../images/cta/cta-image-2.png);
+        height: 736px;
+        width: 380px;
+        bottom: 0;
+        right: 0;
+
+        @include desktop {
+            transform: scale(0.7);
+            bottom: -110px;
+            right: -57px;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 140px;
+        max-width: 530px;
+        text-align: center; 
+
+        @include desktop {
+            row-gap: 80px
+        }
+
+        @include mobile {
+            row-gap: 50px
+        }
+    }
+
+    &__badge {
+        @include caption-bold;
+
+        color: $color-accent;
+        padding: 3px 6px;
+        border: 1px solid currentColor;
+        border-radius: 4px;
+    }
+
+    &__button {
+        position: relative;
+        margin-bottom: 24px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 63px;
+            height: 61px;
+            background-image: url(../images/decor/sparkle-small.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__platforms {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        &-title {
+            @include caption;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
+        }
+    }
+}
