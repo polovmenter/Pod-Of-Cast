@@ -85,7 +85,8 @@
             right: -40px;
             width: 63px;
             height: 61px;
-            background-image: url(../images/decor/sparkle-small.svg);
+            background-image: url(../images/decor/sparkle.svg);
+            transform: rotateY(180deg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;

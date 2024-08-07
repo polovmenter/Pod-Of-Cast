@@ -1,0 +1,14 @@
+.card {
+    border: 2px solid $color-dark;
+    border-radius: $border-radius;
+    padding: 16px;
+    transition-duration: $transition-duration;
+
+    @include mobile-s {
+        padding: 10px;
+    }
+    
+    @include hover {
+        box-shadow: 10px 10px 0px 0px $color-dark;
+    }
+}

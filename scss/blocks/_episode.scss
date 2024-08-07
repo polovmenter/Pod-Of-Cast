@@ -1,0 +1,135 @@
+.episode {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 570px;
+    border-radius: $border-radius--large;
+    background-color: $color-light;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        @include mobile-s {
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
+
+    &__cover {
+        width: 166px;
+        height: 166px;
+        position: relative;
+        flex-shrink: 0;
+        border-radius: $border-radius;
+        background-size: contain;
+
+        @include mobile {
+            width: 140px;
+            height: 140px;
+        }
+
+        @include mobile-s {
+            width: 150px;
+            height: 150px;
+        }
+
+        &-platforms {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            column-gap: 6px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: left;
+
+        @include mobile-s {
+            row-gap: 8px;
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-gray;
+
+        @include mobile-s {
+            row-gap: 0;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__number {
+        font-weight: 700;
+        color: $color-accent;
+    }
+
+    &__link {
+        @include h3-bold;
+
+        color: $color-dark;
+
+        @include hover {
+            color: $color-accent;
+        }
+    }
+
+    &__text {
+        @include caption;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px 20px;
+        flex-wrap: wrap;
+    }
+
+    &__host {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        margin-right: -2px;
+
+        &-text {
+            @include small-bold;
+        }
+
+        &-list {
+            display: flex;
+        }
+
+        &-item:not(:first-child) {
+            margin-left: -9px;
+        }
+        
+        &-image {
+            width: 29px;
+            height: 29px;
+            border: 2px solid $color-light;
+            border-radius: 50%;
+        }
+    }
+}
+
+.episodes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include tablet {
+        grid-template-columns: 1fr;
+    }
+}
