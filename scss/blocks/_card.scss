@@ -1,7 +1,7 @@
 .card {
     border: 2px solid $color-dark;
     border-radius: $border-radius;
-    padding: 16px;
+    padding: 14px;
     transition-duration: $transition-duration;
 
     @include mobile-s {

@@ -1,0 +1,48 @@
+.slider {
+    padding-left: calc((100vw - $container-width) / 2);
+
+    &__inner {
+        margin-bottom: 60px;
+
+        @include mobile {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__item {
+        max-width: 570px;
+        width: 100%;
+        background-color: $color-light;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        padding: 5px;
+
+        @include mobile {
+            column-gap: 20px;
+        }
+    }
+
+    &__button {
+        width: 37px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        color: $color-accent;
+        background-color: transparent;
+
+        & path {
+            stroke: currentColor;
+        }
+    }
+
+    & .swiper-button-disabled {
+        color: $color-dark;
+    }
+}

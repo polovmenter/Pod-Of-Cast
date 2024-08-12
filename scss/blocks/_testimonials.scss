@@ -1,0 +1,78 @@
+.testimonials {
+    position: relative;
+    padding-block: $section-padding-y 100px;
+    background-color: $color-light-blue;
+
+    @include tablet {
+        padding-bottom: 60px;
+    }
+
+    @include mobile {
+        padding-bottom: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+
+        @include tablet {
+            row-gap: 60px;
+        }
+
+        @include mobile {
+            row-gap: 40px;
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -65px;
+            left: -100px;
+            width: 105px;
+            height: 105px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url(../images/decor/sparkles.svg);
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        border-radius: $border-radius;
+        padding: 40px;
+        color: $color-dark;
+
+        @include mobile {
+            padding: 20px;
+        }
+
+        &-icon {
+            @include fluid-text(70, 96);
+            
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: $color-accent;
+            margin-bottom: -23px; 
+        }
+
+        &-text {
+            @include h3;
+
+            margin-bottom: 32px;
+
+            @include tablet {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
