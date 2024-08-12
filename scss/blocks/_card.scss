@@ -3,6 +3,7 @@
     border-radius: $border-radius;
     padding: 14px;
     transition-duration: $transition-duration;
+    background-color: $color-light;
 
     @include mobile-s {
         padding: 10px;

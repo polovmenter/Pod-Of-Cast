@@ -4,7 +4,6 @@
     row-gap: 20px;
     max-width: 570px;
     border-radius: $border-radius--large;
-    background-color: $color-light;
 
     &__content {
         display: flex;
@@ -75,9 +74,11 @@
         color: $color-accent;
     }
 
-    &__link {
+    &__title {
         @include h3-bold;
+    }
 
+    &__link {
         color: $color-dark;
 
         @include hover {
@@ -114,7 +115,7 @@
         &-item:not(:first-child) {
             margin-left: -9px;
         }
-        
+
         &-image {
             width: 29px;
             height: 29px;

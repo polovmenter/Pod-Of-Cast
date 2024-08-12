@@ -24,6 +24,7 @@ button {
 
 img {
   display: block;
+  height: auto;
 }
 
 @font-face {
@@ -763,6 +764,7 @@ button {
   border-radius: var(--border-radius);
   padding: 14px;
   transition-duration: var(--transition-duration);
+  background-color: var(--color-light);
 }
 @media (max-width: 520px) {
   .card {
@@ -791,7 +793,7 @@ button {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.6;
-  padding: 6px 12px;
+  padding: 4px 10px;
   border: 1px solid currentColor;
   border-radius: 4px;
 }
@@ -802,7 +804,6 @@ button {
   row-gap: 20px;
   max-width: 570px;
   border-radius: var(--border-radius--large);
-  background-color: var(--color-light);
 }
 .episode__content {
   display: flex;
@@ -874,11 +875,13 @@ button {
   font-weight: 700;
   color: var(--color-accent);
 }
-.episode__link {
+.episode__title {
   font-size: clamp(16px, 1.5277777778vw, 22px);
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.02em;
+}
+.episode__link {
   color: var(--color-dark);
 }
 @media (hover: hover) {
@@ -937,6 +940,86 @@ button {
   .episodes {
     grid-template-columns: 1fr;
   }
+}
+
+.article-card {
+  max-width: 570px;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .article-card {
+    max-width: 450px;
+  }
+}
+.article-card__image {
+  border-radius: var(--border-radius);
+  margin-bottom: 40px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .article-card__image {
+    margin-bottom: 30px;
+  }
+}
+.article-card__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 26px;
+}
+@media (max-width: 768px) {
+  .article-card__content {
+    row-gap: 15px;
+    margin-bottom: 20px;
+  }
+}
+.article-card__heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.article-card__type {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 700;
+  line-height: 1.6;
+}
+.article-card__title {
+  font-size: clamp(20px, 2.5vw, 36px);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+.article-card__link {
+  color: var(--color-dark);
+}
+@media (hover: hover) {
+  .article-card__link:hover {
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .article-card__link:active {
+    color: var(--color-accent);
+  }
+}
+.article-card__text {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 500;
+  line-height: 1.6;
+}
+.article-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-gray);
+}
+.article-card__date {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 .slider {
@@ -1679,6 +1762,73 @@ button {
   height: 3px;
   background-color: currentColor;
   border-radius: 50%;
+}
+
+.blog-section {
+  padding-block: var(--section-padding-y);
+  position: relative;
+}
+.blog-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 100px;
+}
+@media (max-width: 1025px) {
+  .blog-section__inner {
+    row-gap: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-section__inner {
+    row-gap: 40px;
+  }
+}
+.blog-section__items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .blog-section__items {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+.blog-section__items::before, .blog-section__items::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+@media (max-width: 1355px) {
+  .blog-section__items::before, .blog-section__items::after {
+    display: none;
+  }
+}
+.blog-section__items::before {
+  top: -77px;
+  left: -96px;
+  width: 199px;
+  height: 175px;
+  background-image: url(../images/decor/star-dark.svg);
+  z-index: 1;
+}
+.blog-section__items::after {
+  right: -89px;
+  bottom: -107px;
+  width: 163px;
+  height: 151px;
+  background-image: url(../images/decor/scribble-2.svg);
+}
+.blog-section__item {
+  z-index: 2;
 }
 
 .cta {

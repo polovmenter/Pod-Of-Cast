@@ -1,0 +1,69 @@
+.blog-section {
+    padding-block: $section-padding-y;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 100px;
+
+        @include tablet {
+            row-gap: 60px;
+        }
+
+        @include mobile {
+            row-gap: 40px;
+        }
+    }
+
+    &__items {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        width: 100%;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 1;
+
+            @media (max-width: 1355px) {
+                display: none;
+            }
+        }
+
+        &::before {
+            top: -77px;
+            left: -96px;
+            width: 199px;
+            height: 175px;
+            background-image: url(../images/decor/star-dark.svg);
+            z-index: 1;
+        }
+
+        &::after {
+            right: -89px;
+            bottom: -107px;
+            width: 163px;
+            height: 151px;
+            background-image: url(../images/decor/scribble-2.svg);
+        }
+
+    }
+
+    &__item {
+        z-index: 2;
+    }
+}
