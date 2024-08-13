@@ -5,4 +5,8 @@
     @include tablet {
         padding-block: 14px;
     }
+
+    & .button--transparent {
+        box-shadow: none;
+    }
 }

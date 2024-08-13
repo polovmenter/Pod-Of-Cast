@@ -1,0 +1,43 @@
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__item {
+        max-width: 373px;
+        width: 100%;
+        padding: 57px 93px;
+        border: 1px solid $color-dark;
+        border-radius: $border-radius;
+        background-color: $color-light;
+        box-shadow: 6px 6px 0px 0px $color-accent;
+
+        @include tablet {
+            padding: 50px 90px;
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            @include tablet {
+                row-gap: 5px;
+            }
+        }
+
+        &-title {
+            @include fluid-text(40, 60);
+
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: $color-dark;
+
+            & span {
+                color: $color-accent;
+            }
+        }
+    }
+}

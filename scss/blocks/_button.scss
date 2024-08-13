@@ -24,7 +24,6 @@
     &--transparent {
         background-color: transparent;
         color: $color-dark;
-        box-shadow: none;
 
         @include hover {
             background-color: $color-dark;
