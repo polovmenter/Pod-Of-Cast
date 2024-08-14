@@ -1,0 +1,38 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+
+    &--bottom-line {
+        padding-bottom: 80px;
+        border-bottom: 1px solid $color-gray
+    }
+
+    &__title {
+        @include h2-large;
+
+        color: $color-dark;
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__text b {
+        color: $color-dark;
+    }
+
+    &__link {
+        color: $color-dark;
+        text-decoration: underline;
+    }
+}

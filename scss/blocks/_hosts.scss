@@ -1,0 +1,84 @@
+.hosts {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+
+    &__title {
+        @include h2-large;
+
+        color: $color-dark;
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__item {
+        max-width: 570px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        column-gap: 20px;
+
+        &-image {
+            max-width: 260px;
+        }
+
+        &-info {
+            max-width: 260px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &-heading {
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+        }
+
+        &-post {
+            @include caption;
+        }
+
+        &-name {
+            @include h2;
+
+            color: $color-dark;
+        }
+
+        &-text {
+            @include caption;
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            column-gap: 20px;
+            padding-top: 10px;
+            border-top: 1px solid $color-gray;
+
+            &-text {
+                @include small-bold;
+                
+            }
+        }
+
+        &-socials {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+    }
+}
