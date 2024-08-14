@@ -1038,6 +1038,11 @@ button {
   width: 100%;
   background-color: var(--color-light);
 }
+@media (max-width: 768px) {
+  .slider__item {
+    max-width: 500px;
+  }
+}
 .slider__buttons {
   display: flex;
   align-items: center;
@@ -1923,11 +1928,110 @@ button {
 .about-top__stats {
   transform: translateY(50%);
   z-index: 1;
+  position: relative;
 }
 @media (max-width: 1250px) {
   .about-top__stats {
     transform: translateY(0);
   }
+}
+.about-top__stats::after {
+  content: "";
+  position: absolute;
+  right: -140px;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/decor/spring.svg);
+  transform: translateY(-50%);
+}
+@media (max-width: 1440px) {
+  .about-top__stats::after {
+    display: none;
+  }
+}
+
+.sponsor {
+  padding-block: var(--section-padding-y);
+  background-color: var(--color-light-alt);
+}
+.sponsor__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+@media (max-width: 1025px) {
+  .sponsor__inner {
+    row-gap: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .sponsor__inner {
+    row-gap: 40px;
+  }
+}
+.sponsor__title {
+  position: relative;
+}
+.sponsor__title::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -72px;
+  width: 74px;
+  height: 74px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/decor/sparkles.svg);
+}
+@media (max-width: 768px) {
+  .sponsor__title::before {
+    display: none;
+  }
+}
+.sponsor__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding: 40px 67px 30px;
+  border: 1px solid var(--color-dark);
+  border-radius: var(--border-radius--large);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .sponsor__item {
+    padding: 30px 40px 20px;
+    row-gap: 20px;
+  }
+}
+.sponsor__item-logo-wrapper {
+  max-width: 355px;
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--color-gray);
+}
+@media (max-width: 768px) {
+  .sponsor__item-logo-wrapper {
+    max-width: 300px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .sponsor__item-logo {
+    transform: scale(0.8);
+  }
+}
+.sponsor__item-text {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .cta {

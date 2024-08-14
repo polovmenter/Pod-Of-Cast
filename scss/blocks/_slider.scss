@@ -13,6 +13,10 @@
         max-width: 570px;
         width: 100%;
         background-color: $color-light;
+
+        @include mobile {
+            max-width: 500px;
+        }
     }
 
     &__buttons {

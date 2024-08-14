@@ -48,9 +48,28 @@
     &__stats {
         transform: translateY(50%);
         z-index: 1;
+        position: relative;
 
         @include desktop {
             transform: translateY(0);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -140px;
+            top: 50%;
+            width: 120px;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url(../images/decor/spring.svg);
+            transform: translateY(-50%);
+
+            @media (max-width: 1440px) {
+                display: none;
+            }
         }
     }
 }

@@ -1,0 +1,80 @@
+.sponsor {
+    padding-block: $section-padding-y;
+    background-color: $color-light-alt;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+
+        @include tablet {
+            row-gap: 60px;
+        }
+
+        @include mobile {
+            row-gap: 40px;
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            left: -72px;
+            width: 74px;
+            height: 74px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url(../images/decor/sparkles.svg);
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        padding: 40px 67px 30px;
+        border: 1px solid $color-dark;
+        border-radius: $border-radius--large;
+        text-align: center;
+
+        @include mobile {
+            padding: 30px 40px 20px;
+            row-gap: 20px;
+        }
+
+        &-logo-wrapper {
+            max-width: 355px;
+            width: 100%;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid $color-gray;
+
+            @include mobile {
+                max-width: 300px;
+                padding-bottom: 15px;
+            }
+        }
+
+        &-logo {
+
+            @include mobile {
+                transform: scale(0.8);
+            }
+        }
+
+        &-text {
+            @include caption;
+        }
+    }
+}
