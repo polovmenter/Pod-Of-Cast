@@ -2,6 +2,7 @@
     padding-top: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 80px;
 
     @include tablet {
@@ -19,6 +20,20 @@
 
         color: $color-dark;
         text-align: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -33px;
+            right: -39px;
+            width: 71px;
+            height: 56px;
+            background-image: url(../../images/decor/scribble-2-blue.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
     }
 
     &__items {
@@ -29,6 +44,7 @@
     }
 
     &__item {
+        position: relative;
         max-width: 570px;
         display: flex;
         justify-content: space-between;
@@ -38,9 +54,25 @@
         @include desktop {
             max-width: 470px;
         }
-        
+
         @include mobile {
             max-width: 400px;
+        }
+
+        &-decor {
+            content: "";
+            position: absolute;
+            top: 16px;
+            right: 16px;
+
+            @include desktop {
+                width: 100px;
+                height: auto;
+            }
+
+            @include mobile {
+                width: 80px;
+            }
         }
 
         &-image {
@@ -95,8 +127,6 @@
             column-gap: 20px;
             padding-top: 10px;
             border-top: 1px solid $color-gray;
-            flex-wrap: wrap;
-            row-gap: 10px;
 
             &-text {
                 @include small-bold;
