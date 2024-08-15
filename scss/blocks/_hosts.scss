@@ -14,7 +14,7 @@
     &__items {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     &__item {
@@ -71,7 +71,6 @@
 
             &-text {
                 @include small-bold;
-                
             }
         }
 
