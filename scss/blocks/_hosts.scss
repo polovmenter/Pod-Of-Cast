@@ -4,6 +4,16 @@
     flex-direction: column;
     row-gap: 80px;
 
+    @include tablet {
+        padding-top: 60px;
+        row-gap: 50px
+    }
+
+    @include mobile {
+        padding-top: 40px;
+        row-gap: 30px;
+    }
+
     &__title {
         @include h2-large;
 
@@ -13,8 +23,9 @@
 
     &__items {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -24,8 +35,24 @@
         align-items: end;
         column-gap: 20px;
 
+        @include desktop {
+            max-width: 470px;
+        }
+        
+        @include mobile {
+            max-width: 400px;
+        }
+
         &-image {
             max-width: 260px;
+
+            @include desktop {
+                max-width: 200px;
+            }
+
+            @include mobile {
+                max-width: 160px;
+            }
         }
 
         &-info {
@@ -68,6 +95,8 @@
             column-gap: 20px;
             padding-top: 10px;
             border-top: 1px solid $color-gray;
+            flex-wrap: wrap;
+            row-gap: 10px;
 
             &-text {
                 @include small-bold;

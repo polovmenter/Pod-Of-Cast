@@ -9,5 +9,13 @@
         width: 100%;
         border-radius: $border-radius;
         margin-bottom: 60px;
+
+        @include tablet {
+            margin-bottom: 40px;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
     }
 }

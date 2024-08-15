@@ -3,9 +3,25 @@
     flex-direction: column;
     row-gap: 80px;
 
+    @include tablet {
+        row-gap: 60px;
+    }
+
+    @include mobile {
+        row-gap: 40px;
+    }
+
     &--bottom-line {
         padding-bottom: 80px;
-        border-bottom: 1px solid $color-gray
+        border-bottom: 1px solid $color-gray;
+
+        @include tablet {
+            padding-bottom: 60px;
+        }
+
+        @include mobile {
+            padding-bottom: 50px;
+        }
     }
 
     &__title {
@@ -18,13 +34,26 @@
     &__items {
         display: flex;
         justify-content: space-between;
+        column-gap: 20px;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
     }
 
     &__item {
         max-width: 570px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         row-gap: 30px;
+
+        @include mobile {
+            max-width: 520px;
+            row-gap: 15px;
+        }
     }
 
     &__text b {
