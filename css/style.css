@@ -768,6 +768,7 @@ button {
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  background-color: transparent;
 }
 @media (max-width: 1025px) {
   .burger-button {
@@ -1266,10 +1267,15 @@ button {
   left: -48px;
   width: 63px;
   height: 61px;
-  background-image: url(../../images/decor/sparkle.svg);
+  background-image: url(../images/decor/sparkle.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .content__title::before {
+    display: none;
+  }
 }
 .content__items {
   display: flex;
@@ -2226,10 +2232,15 @@ button {
   right: -39px;
   width: 71px;
   height: 56px;
-  background-image: url(../../images/decor/scribble-2-blue.svg);
+  background-image: url(../images/decor/scribble-2-blue.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .hosts__title::before {
+    display: none;
+  }
 }
 .hosts__items {
   display: flex;
@@ -2435,6 +2446,32 @@ button {
   position: relative;
   padding-block: var(--section-padding-y);
 }
+.contact::before, .contact::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1250px) {
+  .contact::before, .contact::after {
+    display: none;
+  }
+}
+.contact::before {
+  left: 20px;
+  bottom: 255px;
+  width: 120px;
+  height: 120px;
+  background-image: url(../images/decor/spring.svg);
+}
+.contact::after {
+  top: 327px;
+  right: 140px;
+  width: 78px;
+  height: 78px;
+  background-image: url(../images/decor/stars-shining.svg);
+}
 .contact__inner {
   display: flex;
   flex-direction: column;
@@ -2444,6 +2481,26 @@ button {
 @media (max-width: 1025px) {
   .contact__inner {
     row-gap: 40px;
+  }
+}
+.contact__title {
+  position: relative;
+}
+.contact__title::after {
+  content: "";
+  position: absolute;
+  top: -23px;
+  right: -35px;
+  width: 70px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/decor/scribble-4.svg);
+}
+@media (max-width: 768px) {
+  .contact__title::after {
+    display: none;
   }
 }
 .contact__form {
@@ -2456,6 +2513,12 @@ button {
 @media (max-width: 768px) {
   .contact__form {
     row-gap: 50px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .contact__form {
+    row-gap: 40px;
   }
 }
 .contact__form-body {
@@ -2501,6 +2564,11 @@ button {
     max-width: 140px;
   }
 }
+@media (max-width: 520px) {
+  .contact__form-text {
+    text-align: center;
+  }
+}
 .contact__label {
   display: flex;
   flex-direction: column;
@@ -2544,7 +2612,6 @@ button {
     transform: translateX(0);
     left: 0;
     order: -1;
-    margin-bottom: 20px;
   }
 }
 

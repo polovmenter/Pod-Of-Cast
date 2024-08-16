@@ -4,6 +4,7 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    background-color: transparent;
 
     @include tablet {
         display: flex;
