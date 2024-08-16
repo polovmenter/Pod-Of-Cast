@@ -1267,7 +1267,7 @@ button {
   left: -48px;
   width: 63px;
   height: 61px;
-  background-image: url(./images/decor/sparkle.svg);
+  background-image: url(../images/decor/sparkle.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2232,7 +2232,7 @@ button {
   right: -39px;
   width: 71px;
   height: 56px;
-  background-image: url(./images/decor/scribble-2-blue.svg);
+  background-image: url(../images/decor/scribble-2-blue.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
