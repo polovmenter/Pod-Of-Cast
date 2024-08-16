@@ -1,0 +1,17 @@
+.input {
+    @include text-bold;
+
+    padding: 18px 20px;
+    border: 1px solid $color-dark;
+    border-radius: $border-radius;
+    outline: none;
+    color: $color-dark;
+
+    &:focus {
+        border-color: $color-accent; 
+    }
+
+    &::placeholder {
+        @include text;
+    }
+}

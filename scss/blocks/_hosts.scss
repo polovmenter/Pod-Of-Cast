@@ -46,6 +46,7 @@
     &__item {
         position: relative;
         max-width: 570px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: end;
@@ -73,6 +74,10 @@
             @include mobile {
                 width: 80px;
             }
+
+            @include mobile-s {
+                display: none;
+            }
         }
 
         &-image {
@@ -84,6 +89,10 @@
 
             @include mobile {
                 max-width: 160px;
+            }
+
+            @include mobile-s {
+                max-width: 130px;
             }
         }
 

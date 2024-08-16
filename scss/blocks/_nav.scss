@@ -1,4 +1,4 @@
-.nav {   
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,8 +51,8 @@
             align-items: center;
             column-gap: 4px;
 
-            @include hover {
-                & .nav__item-details {
+            &:hover {
+                &  .nav__item-details {
                     display: flex;
                 }
             }

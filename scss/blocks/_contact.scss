@@ -1,0 +1,120 @@
+.contact {
+    position: relative;
+    padding-block: $section-padding-y;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        max-width: 796px;
+
+        @include tablet {
+            row-gap: 40px;
+        }
+    }
+
+    &__form {
+        padding-top: 40px;
+        border-top: 1px solid $color-gray;
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+
+        @include mobile {
+            row-gap: 50px;
+        }
+
+        &-body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 20px;
+
+            @include tablet {
+                gap: 30px 15px;
+            }
+
+            @include mobile-s {
+                grid-template-columns: 1fr;
+                row-gap: 20px
+            }   
+        }
+
+        &-bottom {
+            @include caption;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            color: $color-dark;
+
+            @include mobile-s {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+        }
+
+        &-tip {
+
+            & span {
+                color: $color-accent;
+            }
+        }
+
+        &-text {
+            max-width: 175px;
+
+            @include tablet {
+                max-width: 140px;
+            }
+        }
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        @include mobile-s {
+            row-gap: 10px
+        }
+
+        &-title {
+            @include caption-bold;
+
+            color: $color-dark;
+        }
+
+        & span {
+            color: $color-accent;
+        }
+    }
+
+    &__textarea {
+        grid-column: span 2;
+        row-gap: 25px;
+
+        & textarea {
+            min-height: 165px;
+        }
+
+        @include mobile-s {
+            grid-column: 1;
+            row-gap: 10px;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include mobile-s {
+            position: relative;
+            transform: translateX(0);
+            left: 0;
+            order: -1;
+            margin-bottom: 20px;    
+        }
+    }
+}

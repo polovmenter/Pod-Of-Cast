@@ -94,3 +94,10 @@
         font-weight: 700;
     }
 }
+
+.link {
+    @include caption;
+
+    color: $color-accent;
+    text-decoration: underline;
+}

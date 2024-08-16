@@ -16,9 +16,9 @@
                 <li class="nav__item"><a class="nav__link" href="#" target="_blank">Episodes</a></li>
                 <li class="nav__item"><a class="nav__link" href="./about.html" target="_blank">About</a></li>
                 <li class="nav__item nav__item-more">
-                    <div class="nav__link nav__link-more" href="#" target="_blank">
+                    <div class="nav__link nav__link-more">
                         <span>More</span>
-                        <img src="./images/arrow-down.svg" alt="" width="16" height="16" loading="lazy">
+                        <img src="./images/arrow-down.svg" alt="" width="16" height="16" loading="lazy"> 
                         <ul class="nav__item-details">
                             <li class="nav__item"><a class="nav__link" href="#" target="_blank">Testimonials</a></li>
                             <li class="nav__item"><a class="nav__link" href="#" target="_blank">Features</a></li>
@@ -40,7 +40,29 @@
             </button>
         </nav>
     </header>
-
+    <div class="mobile-menu">
+        <div class="mobile-menu__body">
+            <button class="mobile-menu__close-button">
+                <span class="visually-hidden">close menu</span>
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Episodes</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">About</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Testimonials</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Features</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Pricing</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Blog</a></li>
+                </ul>
+                <ul class="mobile-menu__buttons">
+                    <li class="mobile-menu__button"><a class="button" href="#" target="_blank">RECENT EPISODES</a></li>
+                    <li class="mobile-menu__button"><a class="button " href="#" target="_blank">SUBSCRIBE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu__overlay"></div>
+    </div>
     <main class="main">
         <section class="about-top top">
             <div class="about-top__inner container">
@@ -74,7 +96,6 @@
                 </ul>
             </div>
         </section>
-
         <section class="about">
             <div class="about__inner container">
                 <div class="about__heading heading">
@@ -119,7 +140,7 @@
                                         <div class="hosts__item-post">Host 1</div>
                                         <h4 class="hosts__item-name">Porter Severus</h4>
                                     </div>
-                                   <p class="hosts__item-text">Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet podofcast.</p>
+                                    <p class="hosts__item-text">Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet podofcast.</p>
                                 </div>
                                 <div class="hosts__item-bottom">
                                     <div class="hosts__item-bottom-text">follow me:</div>
@@ -146,7 +167,7 @@
                                         <div class="hosts__item-post">Host 2</div>
                                         <h4 class="hosts__item-name">Marques Keith</h4>
                                     </div>
-                                   <p class="hosts__item-text">Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet podofcast.</p>
+                                    <p class="hosts__item-text">Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet podofcast.</p>
                                 </div>
                                 <div class="hosts__item-bottom">
                                     <div class="hosts__item-bottom-text">follow me:</div>
@@ -168,7 +189,6 @@
                 </div>
             </div>
         </section>
-
         <section class="sponsor">
             <div class="sponsor__inner">
                 <div class="heading">
@@ -221,9 +241,44 @@
                 </div>
             </div>
         </section>
-
+        <section class="contact">
+            <div class="contact__inner container">
+                <div class="heading">
+                    <h2 class="contact__title title">Get in touch</h2>
+                    <p class="heading__text text">Send your message to us</p>
+                </div>
+                <form class="contact__form" action="#">
+                    <div class="contact__form-body">
+                        <label class="contact__label">
+                            <div class="contact__label-title">Full name <span>*</span></div>
+                            <input class="contact__input input" type="text" placeholder="John Doe">
+                        </label>
+                        <label class="contact__label">
+                            <div class="contact__label-title">Email <span>*</span></div>
+                            <input class="contact__input input" type="email" placeholder="johndoe@gmail.com">
+                        </label>
+                        <label class="contact__label">
+                            <div class="contact__label-title">Phone <span>*</span></div>
+                            <input class="contact__input input" type="number" placeholder="Phone">
+                        </label>
+                        <label class="contact__label">
+                            <div class="contact__label-title">Subject <span>*</span></div>
+                            <input class="contact__input input" type="text" placeholder="Subject...">
+                        </label>
+                        <label class="contact__label contact__textarea">
+                            <div class="contact__label-title">Message <span>*</span></div>
+                            <textarea class="contact__input input" name="" id="" placeholder="Your message goes here..."></textarea>
+                        </label>
+                    </div>
+                    <div class="contact__form-bottom">
+                        <div class="contact__form-tip"><span>*</span>required</div>
+                        <button class="contact__button button">SEND MESSAGE</button>
+                        <p class="contact__form-text">Viverra at port accumsan. <a class="link" href="#" target="_blank">Orci non</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
-
     <section class="cta">
         <div class="cta__inner container">
             <div class="heading">
