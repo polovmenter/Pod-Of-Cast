@@ -1,0 +1,123 @@
+.podcast-top {
+    position: relative;
+    padding-block: 100px 40px;
+    background-color: $color-light-alt;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 100px;
+        margin-bottom: 80px;
+    }
+
+    &__content {
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        text-align: left;
+    }
+
+    &__info {
+
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+   
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        padding-bottom: 23px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $color-gray;
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__number {
+        font-weight: 700;
+        color: $color-accent;
+    }
+
+    &__badge {
+        @include small-bold;
+
+        color: $color-accent;
+        padding: 2px 5px;
+        border: 1px solid currentColor;
+        border-radius: 4px;
+    }
+
+    &__title {
+        @include h2;
+
+        color: $color-dark;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__author {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+
+        &-image {
+            border-radius: 50%;
+        }
+
+        &-info {
+            @include caption;
+        }
+
+        &-name {
+            font-weight: 700;
+            color: $color-accent;
+        }
+    }
+
+    &__date {
+        @include caption;
+    }
+
+    &__buttons {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        &-highlighted {
+            color: $color-accent;
+            text-transform: uppercase;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        column-gap: 60px;
+
+        &-text {
+            @include caption-bold;
+        }
+    }
+
+    &__tag {
+        @include caption;
+    }
+}

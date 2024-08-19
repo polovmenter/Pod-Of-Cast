@@ -5,10 +5,26 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: $border-radius--large;
+    border-radius: $border-radius;
+    box-shadow: 12px 12px 0px 0px $color-blue;
 
     &--small {
         width: 372px;
+        box-shadow: none;
+
+        & .cover__title {
+            @include h2-large;
+
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+
+        & .cover__platforms {
+            top: 20px;
+            bottom: 20px;
+            column-gap: 10px;
+        }
 
         @include tablet {
             width: 250px;
@@ -30,19 +46,21 @@
 
     &__platforms {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 25px;
+        right: 25px;
         display: flex;
-        column-gap: 10px;
+        column-gap: 13px;
     }
 
     &__title {
-        @include h2-large;
-
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: left;
         position: absolute;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
+        bottom: 25px;
+        left: 25px;
+        right: 25px;
         color: $color-blue;
         letter-spacing: -0.08em;
 

@@ -31,4 +31,8 @@
             color: $color-light;
         }
     }
+
+    & path {
+        fill: currentColor;
+    }
 }
