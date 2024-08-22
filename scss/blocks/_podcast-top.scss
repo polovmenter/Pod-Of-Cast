@@ -3,12 +3,46 @@
     padding-block: 100px 40px;
     background-color: $color-light-alt;
 
+    @include tablet {
+        padding-block: 60px 30px;
+    }
+
+    @include mobile {
+        padding-block: 40px 20px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         column-gap: 100px;
         margin-bottom: 80px;
+
+        @include tablet {
+            column-gap: 60px;
+            margin-bottom: 50px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        @include mobile-s {
+            row-gap: 40px;
+        }
+    }
+
+    &__cover {
+
+        @include tablet {
+            max-width: 372px;
+        }
+
+        @include mobile-s {
+            box-shadow: none;
+        }
     }
 
     &__content {
@@ -17,6 +51,14 @@
         flex-direction: column;
         row-gap: 60px;
         text-align: left;
+
+        @include tablet {
+            row-gap: 40px;
+        }
+
+        @include mobile {
+            max-width: 420px;
+        }
     }
 
     &__info {
@@ -35,6 +77,11 @@
         padding-bottom: 23px;
         margin-bottom: 20px;
         border-bottom: 1px solid $color-gray;
+
+        @include tablet {
+            margin-bottom: 15px;
+            padding-bottom: 18px;
+        }
 
         &-top {
             display: flex;
@@ -65,6 +112,10 @@
 
     &__text {
         margin-bottom: 40px;
+
+        @include desktop {
+            margin-bottom: 20px;
+        }
     }
 
     &__author {
@@ -93,7 +144,10 @@
 
     &__buttons {
         display: flex;
+        align-items: start;
         column-gap: 20px;
+        row-gap: 10px;
+        flex-wrap: wrap;
     }
 
     &__button {
@@ -111,6 +165,11 @@
         display: flex;
         align-items: center;
         column-gap: 60px;
+
+        @include mobile {
+            max-width: 420px;
+            margin-inline: auto;
+        }
 
         &-text {
             @include caption-bold;

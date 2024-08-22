@@ -1,12 +1,18 @@
 .cover {
     position: relative;
-    width: 472px;
+    max-width: 472px;
+    width: 100%;
     aspect-ratio: 1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: $border-radius;
     box-shadow: 12px 12px 0px 0px $color-blue;
+    flex-shrink: 0;
+
+    @include mobile {
+        max-width: 372px;
+    }
 
     &--small {
         width: 372px;
@@ -53,7 +59,8 @@
     }
 
     &__title {
-        font-size: 46px;
+        @include fluid-text(30, 46);
+
         font-weight: 700;
         line-height: 1.4;
         text-align: left;
