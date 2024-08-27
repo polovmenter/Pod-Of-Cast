@@ -5,6 +5,10 @@
     max-width: 570px;
     border-radius: $border-radius--large;
 
+    @include hover {
+        box-shadow: 10px 10px 0px 0px $color-blue;
+    }
+
     &__content {
         display: flex;
         align-items: center;
@@ -122,15 +126,5 @@
             border: 2px solid $color-light;
             border-radius: 50%;
         }
-    }
-}
-
-.episodes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-
-    @include tablet {
-        grid-template-columns: 1fr;
     }
 }

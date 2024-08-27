@@ -148,12 +148,20 @@
         column-gap: 20px;
         row-gap: 10px;
         flex-wrap: wrap;
+
+        @include mobile-s {
+            justify-content: center;
+        }
     }
 
     &__button {
         display: flex;
         align-items: center;
         column-gap: 10px;
+
+        @include mobile-s {
+            order: -1;
+        }
 
         &-highlighted {
             color: $color-accent;
@@ -169,6 +177,7 @@
         @include mobile {
             max-width: 420px;
             margin-inline: auto;
+            column-gap: 40px;
         }
 
         &-text {

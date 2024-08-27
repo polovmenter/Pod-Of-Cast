@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Episode 1 - "Are you a Perplexed Mind Person?" by Jane Doe</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Pod Of Cast" width="74" height="74" loading="lazy"></a>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#" target="_blank">Episodes</a></li>
+                <li class="nav__item"><a class="nav__link" href="./about.html" target="_blank">About</a></li>
+                <li class="nav__item nav__item-more">
+                    <div class="nav__link nav__link-more">
+                        <span>More</span>
+                        <img src="./images/arrow-down.svg" alt="" width="16" height="16" loading="lazy">
+                        <ul class="nav__item-details">
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Testimonials</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Features</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Pricing</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Blog</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav__buttons">
+                <a class="button button--small button--transparent" href="#" target="_blank">RECENT EPISODES</a>
+                <a class="button button--small" href="#" target="_blank">SUBSCRIBE</a>
+            </div>
+            <button class="burger-button">
+                <span class="visually-hidden">Open mobile menu</span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu__body">
+            <button class="mobile-menu__close-button">
+                <span class="visually-hidden">close menu</span>
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Episodes</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">About</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Testimonials</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Features</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Pricing</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Blog</a></li>
+                </ul>
+                <ul class="mobile-menu__buttons">
+                    <li class="mobile-menu__button"><a class="button" href="#" target="_blank">RECENT EPISODES</a></li>
+                    <li class="mobile-menu__button"><a class="button " href="#" target="_blank">SUBSCRIBE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu__overlay"></div>
+    </div>
+    <main class="main">
+        <section class="podcast-top top">
+            <div class="container">
+                <div class="podcast-top__inner">
+                    <div class="podcast-top__cover cover" style="background-image: url(./images/covers/perplexed-mind.jpg);">
+                        <ul class="cover__platforms">
+                            <li class="cover__platform"><img src="./images/platforms/google-podcast-icon-small.svg" alt="Google Podcast" width="30" height="30" loading="lazy"></li>
+                            <li class="cover__platform"><img src="./images/platforms/spotify-icon-small.svg" alt="Spotify" width="30" height="30" loading="lazy"></li>
+                            <li class="cover__platform"><img src="./images/platforms/youtube-icon-small.svg" alt="YouTube" width="30" height="30" loading="lazy"></li>
+                        </ul>
+                        <h2 class="cover__title">Perplexed Mind</h2>
+                    </div>
+                    <div class="podcast-top__content">
+                        <div class="podcast-top__info">
+                            <div class="podcast-top__heading">
+                                <div class="podcast-top__heading-top">
+                                    <div class="podcast-top__number">Episode 1</div>
+                                    <div class="podcast-top__badge">FEATURED EPISODE</div>
+                                </div>
+                                <h1 class="podcast-top__title">Are you a Perplexed Mind Person?</h1>
+                            </div>
+                            <p class="podcast-top__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                            </p>
+                            <div class="podcast-top__info-bottom">
+                                <div class="podcast-top__author">
+                                    <img class="podcast-top__author-image" src="./images/hosts/host-1.jpg" alt="Jane Doe" width="36" height="36" loading="lazy">
+                                    <div class="podcast-top__author-info">
+                                        Hosted by:
+                                        <span class="podcast-top__author-name">Jane Doe</span>
+                                    </div>
+                                </div>
+                                <time class="podcast-top__date" datetime="2021-09-22">Sep 22, 2021</time>
+                            </div>
+                        </div>
+                        <div class="podcast-top__buttons">
+                            <a class="button" href="#" target="_blank">SUBSCRIBE</a>
+                            <a class="podcast-top__button button button--transparent" href="#" target="_blank">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Play">
+                                        <g id="Play_2">
+                                            <path id="Stroke 3" fill-rule="evenodd" clip-rule="evenodd" d="M18 12.4887C18 10.596 8.85356 4.54127 7.81601 5.62996C6.77845 6.71864 6.67869 18.1561 7.81601 19.3474C8.95333 20.5428 18 14.3813 18 12.4887Z" fill="black" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="button__text">
+                                    LISTEN NOW <span class="podcast-top__button-highlighted">(46 min)</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast-top__bottom">
+                    <div class="podcast-top__bottom-text">Tags:</div>
+                    <ul class="tags">
+                        <li class="podcast-top__tag tag">mind-behaviour</li>
+                        <li class="podcast-top__tag tag">health</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="episodes">
+            <div class="episodes__inner container">
+                <h2 class="episodes__title title">Latest Episode</h2>
+                <div class="categories">
+                    <div class="categories__buttons">
+                        <button class="categories__button categories__button--active" data-filter="all">All</button>
+                        <button class="categories__button" data-filter="business">Business</button>
+                        <button class="categories__button" data-filter="comedy">Comedy</button>
+                        <button class="categories__button" data-filter="education">Education</button>
+                        <button class="categories__button" data-filter="health">Health</button>
+                        <button class="categories__button" data-filter="news">News</button>
+                        <button class="categories__button" data-filter="tech">Tech</button>
+                    </div>
+                    <ul class="episodes__items categories__items">
+                        <li class="episodes__item categories__item" data-tag="health">
+                            <article class="episode card card--small">
+                                <div class="episode__content">
+                                    <div class="episode__cover" style="background-image: url(./images/covers/pandemic-becoming-endemic.jpg);">
+                                        <ul class="episode__cover-platforms">
+                                            <li class="episode__cover-platform"><img src="./images/platforms/google-podcast-icon-small.svg" alt="Google Podcast" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/spotify-icon-small.svg" alt="Spotify" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/youtube-icon-small.svg" alt="YouTube" width="12" height="12" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="episode__info">
+                                        <div class="episode__heading">
+                                            <div class="episode__number">Eps. 6</div>
+                                            <h2 class="episode__title"><a class="episode__link" href="./pandemic-becoming-endemic.html" target="_blank">Pandemic Becoming Endemic</a></h2>
+                                        </div>
+                                        <p class="episode__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+                                    </div>
+                                </div>
+                                <div class="episode__bottom">
+                                    <ul class="episode__tags tags">
+                                        <li class="episode__tag tag">covid-19</li>
+                                        <li class="episode__tag tag">health</li>
+                                    </ul>
+                                    <div class="episode__host">
+                                        <span class="episode__host-text">Hosted by:</span>
+                                        <ul class="episode__host-list">
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-1.jpg" alt="First host name" width="25" height="25" loading="lazy"></li>
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-2.jpg" alt="Second host name" width="25" height="25" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="episodes__item categories__item" data-tag="tech">
+                            <article class="episode card card--small">
+                                <div class="episode__content">
+                                    <div class="episode__cover" style="background-image: url(./images/covers/tesla-autopilot.jpg);">
+                                        <ul class="episode__cover-platforms">
+                                            <li class="episode__cover-platform"><img src="./images/platforms/google-podcast-icon-small.svg" alt="Google Podcast" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/spotify-icon-small.svg" alt="Spotify" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/youtube-icon-small.svg" alt="YouTube" width="12" height="12" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="episode__info">
+                                        <div class="episode__heading">
+                                            <div class="episode__number">Eps. 5</div>
+                                            <h2 class="episode__title"><a class="episode__link" href="./tesla-autopilot.html" target="_blank">Tesla Autopilot Controversy</a></h2>
+                                        </div>
+                                        <p class="episode__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+                                    </div>
+                                </div>
+                                <div class="episode__bottom">
+                                    <ul class="episode__tags tags">
+                                        <li class="episode__tag tag">automation</li>
+                                        <li class="episode__tag tag">tech</li>
+                                    </ul>
+                                    <div class="episode__host">
+                                        <span class="episode__host-text">Hosted by:</span>
+                                        <ul class="episode__host-list">
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-1.jpg" alt="First host name" width="25" height="25" loading="lazy"></li>
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-2.jpg" alt="Second host name" width="25" height="25" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="episodes__item categories__item" data-tag="education">
+                            <article class="episode card card--small">
+                                <div class="episode__content">
+                                    <div class="episode__cover" style="background-image: url(./images/covers/womens-rights.jpg);">
+                                        <ul class="episode__cover-platforms">
+                                            <li class="episode__cover-platform"><img src="./images/platforms/google-podcast-icon-small.svg" alt="Google Podcast" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/spotify-icon-small.svg" alt="Spotify" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/youtube-icon-small.svg" alt="YouTube" width="12" height="12" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="episode__info">
+                                        <div class="episode__heading">
+                                            <div class="episode__number">Eps. 5</div>
+                                            <h2 class="episode__title"><a class="episode__link" href="./womans-rights.htmlpandemic-becoming-endemic.html" target="_blank">Women's Rights? Is it alright?</a></h2>
+                                        </div>
+                                        <p class="episode__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+                                    </div>
+                                </div>
+                                <div class="episode__bottom">
+                                    <ul class="episode__tags tags">
+                                        <li class="episode__tag tag">women’s rights</li>
+                                    </ul>
+                                    <div class="episode__host">
+                                        <span class="episode__host-text">Hosted by:</span>
+                                        <ul class="episode__host-list">
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-1.jpg" alt="First host name" width="25" height="25" loading="lazy"></li>
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-2.jpg" alt="Second host name" width="25" height="25" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="episodes__item categories__item" data-tag="health">
+                            <article class="episode card card--small">
+                                <div class="episode__content">
+                                    <div class="episode__cover" style="background-image: url(./images/covers/self–confidence.jpg);">
+                                        <ul class="episode__cover-platforms">
+                                            <li class="episode__cover-platform"><img src="./images/platforms/google-podcast-icon-small.svg" alt="Google Podcast" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/spotify-icon-small.svg" alt="Spotify" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/youtube-icon-small.svg" alt="YouTube" width="12" height="12" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="episode__info">
+                                        <div class="episode__heading">
+                                            <div class="episode__number">Eps. 3</div>
+                                            <h2 class="episode__title"><a class="episode__link" href="./self-confidence.htmlpandemic-becoming-endemic.html" target="_blank">How to Deal with Self–Confidence</a></h2>
+                                        </div>
+                                        <p class="episode__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+                                    </div>
+                                </div>
+                                <div class="episode__bottom">
+                                    <ul class="episode__tags tags">
+                                        <li class="episode__tag tag">self-esteem</li>
+                                        <li class="episode__tag tag">health</li>
+                                    </ul>
+                                    <div class="episode__host">
+                                        <span class="episode__host-text">Hosted by:</span>
+                                        <ul class="episode__host-list">
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-1.jpg" alt="First host name" width="25" height="25" loading="lazy"></li>
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-2.jpg" alt="Second host name" width="25" height="25" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="episodes__item categories__item" data-tag="education">
+                            <article class="episode card card--small">
+                                <div class="episode__content">
+                                    <div class="episode__cover" style="background-image: url(./images/covers/social-class.jpg);">
+                                        <ul class="episode__cover-platforms">
+                                            <li class="episode__cover-platform"><img src="./images/platforms/google-podcast-icon-small.svg" alt="Google Podcast" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/spotify-icon-small.svg" alt="Spotify" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/youtube-icon-small.svg" alt="YouTube" width="12" height="12" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="episode__info">
+                                        <div class="episode__heading">
+                                            <div class="episode__number">Eps. 2</div>
+                                            <h2 class="episode__title"><a class="episode__link" href="./social-classes.htmlpandemic-becoming-endemic.html" target="_blank">Type of Social Classes of People</a></h2>
+                                        </div>
+                                        <p class="episode__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+                                    </div>
+                                </div>
+                                <div class="episode__bottom">
+                                    <ul class="episode__tags tags">
+                                        <li class="episode__tag tag">social class</li>
+                                        <li class="episode__tag tag">wealth</li>
+                                    </ul>
+                                    <div class="episode__host">
+                                        <span class="episode__host-text">Hosted by:</span>
+                                        <ul class="episode__host-list">
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-1.jpg" alt="First host name" width="25" height="25" loading="lazy"></li>
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-2.jpg" alt="Second host name" width="25" height="25" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="episodes__item categories__item" data-tag="health ">
+                            <article class="episode card card--small">
+                                <div class="episode__content">
+                                    <div class="episode__cover" style="background-image: url(./images/covers/perplexed-mind.jpg);">
+                                        <ul class="episode__cover-platforms">
+                                            <li class="episode__cover-platform"><img src="./images/platforms/google-podcast-icon-small.svg" alt="Google Podcast" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/spotify-icon-small.svg" alt="Spotify" width="12" height="12" loading="lazy"></li>
+                                            <li class="episode__cover-platform"><img src="./images/platforms/youtube-icon-small.svg" alt="YouTube" width="12" height="12" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="episode__info">
+                                        <div class="episode__heading">
+                                            <div class="episode__number">Eps. 1</div>
+                                            <h2 class="episode__title"><a class="episode__link" href="./perplexed-mind.html" target="_blank">Are you a Perplexed Mind Person?</a></h2>
+                                        </div>
+                                        <p class="episode__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+                                    </div>
+                                </div>
+                                <div class="episode__bottom">
+                                    <ul class="episode__tags tags">
+                                        <li class="episode__tag tag">mind-behaviour</li>
+                                        <li class="episode__tag tag">health</li>
+                                    </ul>
+                                    <div class="episode__host">
+                                        <span class="episode__host-text">Hosted by:</span>
+                                        <ul class="episode__host-list">
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-1.jpg" alt="First host name" width="25" height="25" loading="lazy"></li>
+                                            <li class="episode__host-item"><img class="episode__host-image" src="./images/hosts/host-2.jpg" alt="Second host name" width="25" height="25" loading="lazy"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="scribble"></div>
+        </section>
+    </main>
+    <section class="cta">
+        <div class="cta__inner container">
+            <div class="heading">
+                <div class="cta__badge">BETA</div>
+                <h2 class="title">Available now<br>Pod of Cast App</h2>
+                <p class="heading__text">We just launched our podcast app!</p>
+            </div>
+            <div class="cta__content">
+                <a class="cta__button button" href="#" target="_blank">DOWNLOAD NOW</a>
+                <div class="cta__platforms">
+                    <p class="cta__platforms-title">Content also available on:</p>
+                    <ul class="cta__platforms-list">
+                        <li class="cta__platform-item"><img class="cta__platforms-icon" src="./images/platforms/google-podcast-icon-dark.svg" alt="Google Podcast" width="24" height="24" loading="lazy"></li>
+                        <li class="cta__platform-item"><img class="cta__platforms-icon" src="./images/platforms/spotify-icon-dark.svg" alt="Spotify" width="24" height="24" loading="lazy"></li>
+                        <li class="cta__platform-item"><img class="cta__platforms-icon" src="./images/platforms/youtube-icon-dark.svg" alt="YouTube" width="24" height="24" loading="lazy"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__content">
+                    <div class="footer__content-top">
+                        <a class="logo" href="#"><img src="./images/logo.svg" alt="Pod Of Cast" width="74" height="74" loading="lazy"></a>
+                        <div class="footer__content-copyright">©2021.</div>
+                    </div>
+                    <p class="footer__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="footer__socials">
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="#">
+                                <img class="footer__socials-icon" src="./images/socilas/twitter.svg" alt="Twitter" width="24" height="24" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="#">
+                                <img class="footer__socials-icon" src="./images/socilas/instagram.svg" alt="Instagram" width="24" height="24" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="#">
+                                <img class="footer__socials-icon" src="./images/socilas/tiktok.svg" alt="Tiktok" width="24" height="24" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">About</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Testimonials</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Features</a></li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Episodes</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Pricing</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__platforms">
+                    <div class="footer__platform">
+                        <p class="footer__platform-text">Listen to episodes on your fav platform:</p>
+                        <ul class="footer__platform-list">
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/google-podcast-small.svg" alt="Google Podcast" width="122" height="22" loading="lazy"></li>
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/spotify-small.svg" alt="Spotify" width="80" height="22" loading="lazy"></li>
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/youtube-small.svg" alt="YouTube" width="94" height="22" loading="lazy"></li>
+                        </ul>
+                    </div>
+                    <div class="footer__platform">
+                        <p class="footer__platform-text">App available on:</p>
+                        <ul class="footer__platform-list">
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/app-store.svg" alt="App Store" width="36" height="36" loading="lazy"></li>
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/google-play.svg" alt="Google Play" width="36" height="36" loading="lazy"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-copyright">©2022. All Rights Reserved. <span>Pod of Cast</span></div>
+                <ul class="footer__bottom-links">
+                    <li class="footer__bottom-links-item"><a class="footer__bottom-link" href="#" target="_blank">Terms</a></li>
+                    <li class="footer__bottom-links-item"><a class="footer__bottom-link" href="#" target="_blank">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

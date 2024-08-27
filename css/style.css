@@ -937,6 +937,16 @@ button {
   max-width: 570px;
   border-radius: var(--border-radius--large);
 }
+@media (hover: hover) {
+  .episode:hover {
+    box-shadow: 10px 10px 0px 0px var(--color-blue);
+  }
+}
+@media (hover: none) {
+  .episode:active {
+    box-shadow: 10px 10px 0px 0px var(--color-blue);
+  }
+}
 .episode__content {
   display: flex;
   align-items: center;
@@ -1061,17 +1071,6 @@ button {
   height: 29px;
   border: 2px solid var(--color-light);
   border-radius: 50%;
-}
-
-.episodes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-@media (max-width: 1025px) {
-  .episodes {
-    grid-template-columns: 1fr;
-  }
 }
 
 .article-card {
@@ -1361,6 +1360,53 @@ button {
   line-height: 1.6;
 }
 
+.categories {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  width: 100%;
+}
+.categories__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 2px solid var(--color-gray);
+}
+.categories__button {
+  font-size: clamp(16px, 1.5277777778vw, 22px);
+  font-weight: 500;
+  line-height: 1.6;
+  background-color: transparent;
+  padding: 8px 16px;
+}
+@media (hover: hover) {
+  .categories__button:hover {
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .categories__button:active {
+    color: var(--color-accent);
+  }
+}
+.categories__button--active {
+  color: var(--color-accent);
+}
+.categories__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.categories__item--hide {
+  animation: hide 0.3s linear forwards;
+}
+
+@keyframes hide {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
 .header {
   padding-block: 24px 0;
   background-color: var(--color-light-alt);
@@ -1823,10 +1869,18 @@ button {
     row-gap: 40px;
   }
 }
-.recent__episodes {
+.recent__items {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.recent__episodes::before {
+@media (max-width: 1025px) {
+  .recent__items {
+    grid-template-columns: 1fr;
+  }
+}
+.recent__items::before {
   content: "";
   position: absolute;
   top: -110px;
@@ -1840,7 +1894,7 @@ button {
   transform: rotateY(180deg);
 }
 @media (max-width: 1350px) {
-  .recent__episodes::before {
+  .recent__items::before {
     display: none;
   }
 }
@@ -2794,11 +2848,21 @@ button {
   row-gap: 10px;
   flex-wrap: wrap;
 }
+@media (max-width: 520px) {
+  .podcast-top__buttons {
+    justify-content: center;
+  }
+}
 .podcast-top__button {
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+@media (max-width: 520px) {
+  .podcast-top__button {
+    order: -1;
+  }
 }
 .podcast-top__button-highlighted {
   color: var(--color-accent);
@@ -2814,6 +2878,8 @@ button {
   .podcast-top__bottom {
     max-width: 420px;
     margin-inline: auto;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 .podcast-top__bottom-text {
@@ -2825,6 +2891,65 @@ button {
   font-size: clamp(12px, 0.9722222222vw, 14px);
   font-weight: 500;
   line-height: 1.6;
+}
+
+.episodes {
+  position: relative;
+  padding-block: var(--section-padding-y);
+}
+.episodes::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -60px;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/decor/spring.svg);
+}
+.episodes__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 100px;
+  position: relative;
+}
+.episodes__inner::after {
+  content: "";
+  position: absolute;
+  left: -78px;
+  bottom: -91px;
+  width: 170px;
+  height: 134px;
+  background-image: url(../images/decor/scribble-5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.episodes__title {
+  position: relative;
+}
+.episodes__title::before {
+  content: "";
+  position: absolute;
+  top: -34px;
+  left: -53px;
+  width: 63px;
+  height: 61px;
+  background-image: url(../images/decor/sparkle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .episodes__title::before {
+    display: none;
+  }
+}
+.episodes__items {
+  gap: 20px;
 }
 
 .cta {
