@@ -3,7 +3,7 @@
     background-color: $color-light-alt;
 
     @include tablet {
-        padding-block: 14px;
+        padding-block: 14px 0;
     }
 
     & .button--transparent {

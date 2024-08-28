@@ -52,6 +52,12 @@
 
     &__text {
         @include caption;
+
+        transform: translateY(-15px);
+
+        @include mobile {
+            transform: translateY(-10px);
+        }
     }
 
     &__bottom {

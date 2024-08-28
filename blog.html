@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Article and News</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Pod Of Cast" width="74" height="74" loading="lazy"></a>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#" target="_blank">Episodes</a></li>
+                <li class="nav__item"><a class="nav__link" href="./about.html" target="_blank">About</a></li>
+                <li class="nav__item nav__item-more">
+                    <div class="nav__link nav__link-more">
+                        <span>More</span>
+                        <img src="./images/arrow-down.svg" alt="" width="16" height="16" loading="lazy">
+                        <ul class="nav__item-details">
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Testimonials</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Features</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Pricing</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#" target="_blank">Blog</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav__buttons">
+                <a class="button button--small button--transparent" href="#" target="_blank">RECENT EPISODES</a>
+                <a class="button button--small" href="#" target="_blank">SUBSCRIBE</a>
+            </div>
+            <button class="burger-button">
+                <span class="visually-hidden">Open mobile menu</span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu__body">
+            <button class="mobile-menu__close-button">
+                <span class="visually-hidden">close menu</span>
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Episodes</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">About</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Testimonials</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Features</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Pricing</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#" target="_blank">Blog</a></li>
+                </ul>
+                <ul class="mobile-menu__buttons">
+                    <li class="mobile-menu__button"><a class="button" href="#" target="_blank">RECENT EPISODES</a></li>
+                    <li class="mobile-menu__button"><a class="button " href="#" target="_blank">SUBSCRIBE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu__overlay"></div>
+    </div>
+
+    <main class="main">
+        <section class="blog-top top">
+            <div class="blog-top__inner container">
+                <h1 class="blog-top__title display-heading">Article<br>and <span>News</span></h1>
+                <p class="blog-top__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.</p>
+                <form class="blog-top__search" action="#">
+                    <input class="blog-top__search-input" type="text" placeholder="Search...">
+                    <button class="blog-top__search-button" type="submit">
+                        <span class="visually-hidden">search</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Search">
+                                <g id="Search_2">
+                                    <ellipse id="Ellipse_739" cx="11.7664" cy="11.7666" rx="8.98856" ry="8.98856" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Line_181" d="M18.0181 18.4852L21.5421 22.0001" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="blog__inner container">
+                <h2 class="blog__title title">Latest Posts</h2>
+                <div class="categories">
+                    <div class="categories__buttons">
+                        <button class="categories__button categories__button--active" data-filter="all">All</button>
+                        <button class="categories__button" data-filter="business">Business</button>
+                        <button class="categories__button" data-filter="news">News</button>
+                        <button class="categories__button" data-filter="tips-n-trick">Tips & Trick</button>
+                        <button class="categories__button" data-filter="podcast">Podcast</button>
+                        <button class="categories__button" data-filter="productivity">Productivity</button>
+                    </div>
+                    <ul class="blog__items categories__items">
+                        <li class="blog__item categories__item" data-tag="podcast">
+                            <article class="article-card card">
+                                <img class="article-card__image" src="./images/blog/setup-your-own-podcast.jpg" alt="" width="538" height="320" loading="lazy">
+                                <div class="article-card__content">
+                                    <div class="article-card__heading">
+                                        <div class="article-card__type">PODCAST</div>
+                                        <h1 class="article-card__title"><a class="article-card__link" href="#" target="_blank">Setup Your Own Podcast</a></h1>
+                                    </div>
+                                    <div class="article-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</div>
+                                </div>
+                                <div class="article-card__bottom">
+                                    <ul class="tags">
+                                        <li class="tag">business</li>
+                                        <li class="tag">podcast</li>
+                                        <li class="tag">startup</li>
+                                    </ul>
+                                    <time class="article-card__date" datetime="2021-09-14">Sep 14, 2021</time>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="blog__item categories__item" data-tag="tips-n-trick">
+                            <article class="article-card card">
+                                <img class="article-card__image" src="./images/blog/doodle-artwork-101.jpg" alt="" width="538" height="320" loading="lazy">
+                                <div class="article-card__content">
+                                    <div class="article-card__heading">
+                                        <div class="article-card__type">TIPS & TRICK</div>
+                                        <h1 class="article-card__title"><a class="article-card__link" href="#" target="_blank">Doodle Artwork 101</a></h1>
+                                    </div>
+                                    <div class="article-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</div>
+                                </div>
+                                <div class="article-card__bottom">
+                                    <ul class="tags">
+                                        <li class="tag">art</li>
+                                        <li class="tag">tips and trick</li>
+                                        <li class="tag">creative</li>
+                                    </ul>
+                                    <time class="article-card__date" datetime="2021-09-12">Sep 12, 2021</time>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="blog__item categories__item" data-tag="news">
+                            <article class="article-card card">
+                                <img class="article-card__image" src="./images/blog/mother-nature-taking-over.jpg" alt="" width="538" height="320" loading="lazy">
+                                <div class="article-card__content">
+                                    <div class="article-card__heading">
+                                        <div class="article-card__type">NEWS</div>
+                                        <h1 class="article-card__title"><a class="article-card__link" href="#" target="_blank">Mother Nature Taking Over</a></h1>
+                                    </div>
+                                    <div class="article-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</div>
+                                </div>
+                                <div class="article-card__bottom">
+                                    <ul class="tags">
+                                        <li class="tag">news</li>
+                                        <li class="tag">nature</li>
+                                    </ul>
+                                    <time class="article-card__date" datetime="2021-09-10">Sep 10, 2021</time>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="blog__item categories__item" data-tag="productivity">
+                            <article class="article-card card">
+                                <img class="article-card__image" src="./images/blog/how-to-be-productive.jpg" alt="" width="538" height="320" loading="lazy">
+                                <div class="article-card__content">
+                                    <div class="article-card__heading">
+                                        <div class="article-card__type">PRODUCTIVITY</div>
+                                        <h1 class="article-card__title"><a class="article-card__link" href="#" target="_blank">How to Be Productive</a></h1>
+                                    </div>
+                                    <div class="article-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</div>
+                                </div>
+                                <div class="article-card__bottom">
+                                    <ul class="tags">
+                                        <li class="tag">productivity</li>
+                                        <li class="tag">mindset</li>
+                                    </ul>
+                                    <time class="article-card__date" datetime="2021-09-08">Sep 8, 2021</time>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="cta">
+        <div class="cta__inner container">
+            <div class="heading">
+                <div class="cta__badge">BETA</div>
+                <h2 class="title">Available now<br>Pod of Cast App</h2>
+                <p class="heading__text">We just launched our podcast app!</p>
+            </div>
+            <div class="cta__content">
+                <a class="cta__button button" href="#" target="_blank">DOWNLOAD NOW</a>
+                <div class="cta__platforms">
+                    <p class="cta__platforms-title">Content also available on:</p>
+                    <ul class="cta__platforms-list">
+                        <li class="cta__platform-item"><img class="cta__platforms-icon" src="./images/platforms/google-podcast-icon-dark.svg" alt="Google Podcast" width="24" height="24" loading="lazy"></li>
+                        <li class="cta__platform-item"><img class="cta__platforms-icon" src="./images/platforms/spotify-icon-dark.svg" alt="Spotify" width="24" height="24" loading="lazy"></li>
+                        <li class="cta__platform-item"><img class="cta__platforms-icon" src="./images/platforms/youtube-icon-dark.svg" alt="YouTube" width="24" height="24" loading="lazy"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__content">
+                    <div class="footer__content-top">
+                        <a class="logo" href="#"><img src="./images/logo.svg" alt="Pod Of Cast" width="74" height="74" loading="lazy"></a>
+                        <div class="footer__content-copyright">©2021.</div>
+                    </div>
+                    <p class="footer__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="footer__socials">
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="#">
+                                <img class="footer__socials-icon" src="./images/socilas/twitter.svg" alt="Twitter" width="24" height="24" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="#">
+                                <img class="footer__socials-icon" src="./images/socilas/instagram.svg" alt="Instagram" width="24" height="24" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="#">
+                                <img class="footer__socials-icon" src="./images/socilas/tiktok.svg" alt="Tiktok" width="24" height="24" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">About</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Testimonials</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Features</a></li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Episodes</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Pricing</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#" target="_blank">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__platforms">
+                    <div class="footer__platform">
+                        <p class="footer__platform-text">Listen to episodes on your fav platform:</p>
+                        <ul class="footer__platform-list">
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/google-podcast-small.svg" alt="Google Podcast" width="122" height="22" loading="lazy"></li>
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/spotify-small.svg" alt="Spotify" width="80" height="22" loading="lazy"></li>
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/youtube-small.svg" alt="YouTube" width="94" height="22" loading="lazy"></li>
+                        </ul>
+                    </div>
+                    <div class="footer__platform">
+                        <p class="footer__platform-text">App available on:</p>
+                        <ul class="footer__platform-list">
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/app-store.svg" alt="App Store" width="36" height="36" loading="lazy"></li>
+                            <li class="footer__platform-item"><img class="footer__platform-logo" src="./images/platforms/google-play.svg" alt="Google Play" width="36" height="36" loading="lazy"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-copyright">©2022. All Rights Reserved. <span>Pod of Cast</span></div>
+                <ul class="footer__bottom-links">
+                    <li class="footer__bottom-links-item"><a class="footer__bottom-link" href="#" target="_blank">Terms</a></li>
+                    <li class="footer__bottom-links-item"><a class="footer__bottom-link" href="#" target="_blank">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

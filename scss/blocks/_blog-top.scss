@@ -1,0 +1,85 @@
+.blog-top {
+    padding-top: 64px;
+
+    @include desktop {
+        padding-top: 40px;
+    }
+
+    @include tablet {
+        padding-bottom: 20px;
+    }
+
+    @include mobile {
+        padding-bottom: 10px;
+    }
+
+    &__inner {
+        max-width: 730px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablet {
+            max-width: 600px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        
+        @include desktop {
+            margin-bottom: 20px;
+        }
+
+        @include mobile {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 43px;
+
+        @include desktop {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        padding: 24px 40px;
+        border: 1px solid $color-dark;
+        border-radius: 16px;
+        box-shadow: 6px 6px 0px 0px rgb(129, 173, 200);
+        background-color: $color-light;
+        max-width: 570px;
+        width: 100%;
+        transform: translateY(50%);
+        z-index: 1;
+
+        @include mobile {
+            padding: 20px 30px;
+            max-width: 400px;
+        }
+
+        &-input {
+            @include text;
+
+            color: $color-dark;
+            width: 100%;
+            border: none;
+
+            &::placeholder {
+                color: $color-gray;
+            }
+        }
+
+        &-button {
+            width: 24px;
+            height: 24px;
+            order: -1;
+            background-color: transparent;
+        }
+    }
+}
