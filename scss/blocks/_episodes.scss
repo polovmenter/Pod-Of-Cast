@@ -13,6 +13,10 @@
         background-position: center;
         background-size: cover;
         background-image: url(../images/decor/spring.svg);
+
+        @include mobile {
+            display: none;
+        }
     }
 
 
@@ -34,6 +38,18 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        @include tablet {
+            row-gap: 80px;
+        }
+
+        @include mobile {
+            row-gap: 50px;
         }
     }
 
@@ -60,5 +76,9 @@
 
     &__items {
         gap: 20px;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
     }
 }

@@ -4,12 +4,26 @@
     row-gap: 100px;
     width: 100%;
 
+    @include tablet {
+        row-gap: 80px;
+    }
+
+    @include mobile {
+        row-gap: 50px;
+    }
+
     &__buttons {
         display: flex;
         justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
+        column-gap: 20px;
         padding-bottom: 18px;
         border-bottom: 2px solid $color-gray;
+        
+        @include tablet {
+            overflow-x: scroll; 
+        }
     }
 
     &__button {
@@ -30,6 +44,10 @@
     &__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+        justify-self: center;
     }
 
     &__item--hide {
