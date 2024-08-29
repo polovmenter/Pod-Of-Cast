@@ -1,0 +1,22 @@
+.socials {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-dark;
+
+        @include hover {
+            color: $color-accent;
+        }
+    }
+}
