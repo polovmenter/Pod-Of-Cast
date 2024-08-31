@@ -624,6 +624,7 @@ button {
   flex-direction: column;
   align-items: center;
   row-gap: 40px;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .quote {
@@ -1339,16 +1340,71 @@ button {
 }
 @media (max-width: 768px) {
   .content__item {
-    max-width: 520px;
+    max-width: 500px;
     row-gap: 15px;
   }
 }
-.content__text b {
+.content__item--list {
+  row-gap: 60px;
+}
+.content__item--image {
+  row-gap: 20px;
+}
+.content__item-title {
+  font-size: clamp(16px, 1.5277777778vw, 22px);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+  text-align: center;
+}
+.content__item-image {
+  width: 100%;
+}
+.content__item-description {
+  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+}
+.content b {
   color: var(--color-dark);
 }
 .content__link {
   color: var(--color-dark);
   text-decoration: underline;
+}
+.content__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.content__list-item {
+  padding-left: 28px;
+  position: relative;
+}
+.content__list-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}
+.content__list--number {
+  counter-reset: number;
+}
+.content__list--number .content__list-item::before {
+  content: counter(number) ".";
+  counter-increment: number;
+  top: 0;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 .input {
@@ -3282,6 +3338,25 @@ button {
   font-size: clamp(12px, 0.9722222222vw, 14px);
   font-weight: 500;
   line-height: 1.6;
+}
+
+.article {
+  padding-block: 100px 140px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+.article-image {
+  width: 100%;
+  height: auto;
+}
+.article__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+.article__content {
+  margin-bottom: 30px;
 }
 
 .cta {

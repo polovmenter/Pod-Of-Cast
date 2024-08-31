@@ -70,17 +70,79 @@
         row-gap: 30px;
 
         @include mobile {
-            max-width: 520px;
+            max-width: 500px;
             row-gap: 15px;
+        }
+
+        &--list {
+            row-gap: 60px
+        }
+
+        &--image {
+            row-gap: 20px
+        }
+
+        &-title {
+            @include h3-bold;
+
+            color: $color-dark;
+            text-align: center;
+        }
+
+        &-image {
+            width: 100%;
+        }
+
+        &-description {
+            @include caption;
+
+            text-align: center;
         }
     }
 
-    &__text b {
+    & b {
         color: $color-dark;
     }
 
     &__link {
         color: $color-dark;
         text-decoration: underline;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        &-item {
+            padding-left: 28px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                background-color: $color-accent;
+                border-radius: 50%;
+            }
+        }
+
+        &--number {
+            counter-reset: number;
+
+            & .content__list-item::before {
+                content: counter(number) ".";
+                counter-increment: number;
+                top: 0;
+                background-color: transparent;
+                width: auto;
+                height: auto;
+                color: $color-accent;
+                font-weight: 700;
+            }
+        }
     }
 }

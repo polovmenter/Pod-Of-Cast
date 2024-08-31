@@ -1,0 +1,21 @@
+.article {
+    padding-block: 100px 140px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+
+    &-image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+    }
+
+    &__content {
+        margin-bottom: 30px;
+    }
+}
