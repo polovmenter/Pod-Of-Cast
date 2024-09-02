@@ -6,6 +6,7 @@
         right: 0;
         bottom: 0;
         padding: 31px 15px;
+        min-width: 230px;
         background-color: $color-light;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         z-index: 3;
@@ -84,8 +85,12 @@
     }
 
     &__buttons {
-        display: flex;
+        display: none;
         flex-direction: column;
         row-gap: 15px;
+
+        @include mobile {
+            display: flex;
+        }
     }
 }

@@ -4,6 +4,22 @@
     flex-direction: column;
     row-gap: 100px;
 
+    @include tablet {
+        padding-block: 80px 100px;
+    }
+
+    @include mobile {
+        padding-block: 40px 60px;
+    }
+
+    @include tablet {
+        row-gap: 80px;
+    }
+
+    @include mobile {
+        row-gap: 60px;
+    }
+
     &-image {
         width: 100%;
         height: auto;

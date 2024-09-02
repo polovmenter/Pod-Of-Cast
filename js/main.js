@@ -22,20 +22,22 @@ const testimonialsSlider = new Swiper(".slider__inner", {
   slidesPerView: "auto",
 })
 
-document.querySelector(".categories__buttons").addEventListener("click", (event) => {
-  if (event.target.tagName !== "BUTTON") return false
+if (categoriesItems.length !== 0) {
+  document.querySelector(".categories__buttons").addEventListener("click", (event) => {
+    if (event.target.tagName !== "BUTTON") return false
 
-  let target = event.target
-  let filterTag = event.target.dataset.filter;
+    let target = event.target
+    let filterTag = event.target.dataset.filter;
 
-  categories.forEach(item => item.classList.remove("categories__button--active"))
-  target.classList.add("categories__button--active")
+    categories.forEach(item => item.classList.remove("categories__button--active"))
+    target.classList.add("categories__button--active")
 
-  categoriesItems.forEach(item => {
-    item.classList.remove("categories__item--hide")
+    categoriesItems.forEach(item => {
+      item.classList.remove("categories__item--hide")
 
-    if (!item.dataset.tag.includes(filterTag) && filterTag !== "all") {
-      item.classList.add("categories__item--hide")
-    }
+      if (!item.dataset.tag.includes(filterTag) && filterTag !== "all") {
+        item.classList.add("categories__item--hide")
+      }
+    })
   })
-})
+}
