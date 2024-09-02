@@ -419,6 +419,10 @@ root {
     transform: rotate(360deg);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: clamp(12px, 1.1111111111vw, 16px);
   font-weight: 500;
